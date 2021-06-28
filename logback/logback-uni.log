@@ -1,0 +1,315 @@
+2021-06-28 14:11:23 INFO  Neither @ContextConfiguration nor @ContextHierarchy found for test class [universityspring.UniversitySpringApplicationTests], using SpringBootContextLoader
+2021-06-28 14:11:23 INFO  Could not detect default resource locations for test class [universityspring.UniversitySpringApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-06-28 14:11:23 INFO  Could not detect default configuration classes for test class [universityspring.UniversitySpringApplicationTests]: UniversitySpringApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-06-28 14:11:23 INFO  Found @SpringBootConfiguration universityspring.UniversitySpringApplication for test class universityspring.UniversitySpringApplicationTests
+2021-06-28 14:11:23 INFO  Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-06-28 14:11:23 INFO  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2d9d5a15, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4b7babaa, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1db7a6e9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@28f8b1c1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6f721b39, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7942cb86, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5962aaa9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@34797efd, org.springframework.test.context.event.EventPublishingTestExecutionListener@4b2d1098, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@245cfc80, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@68a72d40, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1756283f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@34dc439d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@77a7117a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@26bbffe3]
+2021-06-28 14:11:24 INFO  Starting UniversitySpringApplicationTests using Java 16 on VIKTOR-PC with PID 19224 (started by Viktor Malinov in D:\workspace\Java\Test\university-spring)
+2021-06-28 14:11:24 INFO  No active profile set, falling back to default profiles: default
+2021-06-28 14:11:27 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-28 14:11:27 INFO  Finished Spring Data repository scanning in 47 ms. Found 0 JPA repository interfaces.
+2021-06-28 14:11:28 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-06-28 14:11:28 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-28 14:11:28 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-06-28 14:11:28 ERROR Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@2d9d5a15] to prepare test instance [universityspring.UniversitySpringApplicationTests@65c11dc8]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 92 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 112 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 126 common frames omitted
+Caused by: org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:253)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:194)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 127 common frames omitted
+2021-06-28 14:15:02 INFO  ISERTING  ---> main.dataaccess.apigroup.dao.ApiGroup@7714e963
+2021-06-28 14:15:02 INFO  ISERTING  ---> main.dataaccess.apigroup.dao.ApiGroup@1d9b7cce
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroup.dao.ApiGroup@7714e963
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@1d9b7cce
+2021-06-28 14:15:02 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@6c80d78a
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@6c80d78a
+2021-06-28 14:15:02 INFO  DELETING  ---> ID: 3
+2021-06-28 14:15:02 INFO  ISERTING  ---> main.dataaccess.apiuser.dao.ApiUser@5af3afd9
+2021-06-28 14:15:02 INFO  ISERTING  ---> main.dataaccess.apiuser.dao.ApiUser@694abbdc
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apiuser.dao.ApiUser@5af3afd9
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@694abbdc
+2021-06-28 14:15:02 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@2e005c4b
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@2e005c4b
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroup.dao.ApiGroup@7714e963
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apiuser.dao.ApiUser@5af3afd9
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroup.dao.ApiGroup@7714e963
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apiuser.dao.ApiUser@5af3afd9
+2021-06-28 14:15:02 INFO  ISERTING  ---> main.dataaccess.apigroupuser.dao.ApiGroupUser@294425a7
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@6c80d78a
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@2e005c4b
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@6c80d78a
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@2e005c4b
+2021-06-28 14:15:02 INFO  ISERTING  ---> main.dataaccess.apigroupuser.dao.ApiGroupUser@12468a38
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroupuser.dao.ApiGroupUser@294425a7
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroupuser.dao.ApiGroupUser@12468a38
+2021-06-28 14:15:02 INFO  ISERTING  ---> main.dataaccess.faculty.dao.Faculty@5c5eefef
+2021-06-28 14:15:02 INFO  ISERTING  ---> main.dataaccess.faculty.dao.Faculty@595b007d
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 1, object: main.dataaccess.faculty.dao.Faculty@5c5eefef
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@595b007d
+2021-06-28 14:15:02 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@72d1ad2e
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@72d1ad2e
+2021-06-28 14:15:02 INFO  DELETING  ---> ID: 3
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 1, object: main.dataaccess.faculty.dao.Faculty@5c5eefef
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 1, object: main.dataaccess.faculty.dao.Faculty@5c5eefef
+2021-06-28 14:15:02 INFO  ISERTING  ---> main.dataaccess.department.dao.Department@3febb011
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@72d1ad2e
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@72d1ad2e
+2021-06-28 14:15:02 INFO  ISERTING  ---> main.dataaccess.department.dao.Department@158d2680
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 1, object: main.dataaccess.department.dao.Department@3febb011
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.department.dao.Department@158d2680
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@72d1ad2e
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@72d1ad2e
+2021-06-28 14:15:02 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.department.dao.Department@77847718
+2021-06-28 14:15:02 INFO  SELECTING ---> ID: 2, object: main.dataaccess.department.dao.Department@77847718
+2021-06-28 14:19:07 INFO  ISERTING  ---> main.dataaccess.apigroup.dao.ApiGroup@385c9627
+2021-06-28 14:19:07 INFO  ISERTING  ---> main.dataaccess.apigroup.dao.ApiGroup@74e52ef6
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroup.dao.ApiGroup@385c9627
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@74e52ef6
+2021-06-28 14:19:07 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@3857f613
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@3857f613
+2021-06-28 14:19:07 INFO  DELETING  ---> ID: 3
+2021-06-28 14:19:07 INFO  ISERTING  ---> main.dataaccess.apiuser.dao.ApiUser@ba2f4ec
+2021-06-28 14:19:07 INFO  ISERTING  ---> main.dataaccess.apiuser.dao.ApiUser@55fe41ea
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apiuser.dao.ApiUser@ba2f4ec
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@55fe41ea
+2021-06-28 14:19:07 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@fbd1f6
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@fbd1f6
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroup.dao.ApiGroup@5f16132a
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apiuser.dao.ApiUser@69fb6037
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroup.dao.ApiGroup@5f16132a
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apiuser.dao.ApiUser@69fb6037
+2021-06-28 14:19:07 INFO  ISERTING  ---> main.dataaccess.apigroupuser.dao.ApiGroupUser@87a85e1
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@5552768b
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@3c947bc5
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@5552768b
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@3c947bc5
+2021-06-28 14:19:07 INFO  ISERTING  ---> main.dataaccess.apigroupuser.dao.ApiGroupUser@2e1d27ba
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroupuser.dao.ApiGroupUser@87a85e1
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroupuser.dao.ApiGroupUser@2e1d27ba
+2021-06-28 14:19:07 INFO  ISERTING  ---> main.dataaccess.faculty.dao.Faculty@3541cb24
+2021-06-28 14:19:07 INFO  ISERTING  ---> main.dataaccess.faculty.dao.Faculty@40cb8df7
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 1, object: main.dataaccess.faculty.dao.Faculty@3541cb24
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@40cb8df7
+2021-06-28 14:19:07 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@13b13b5d
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@13b13b5d
+2021-06-28 14:19:07 INFO  DELETING  ---> ID: 3
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 1, object: main.dataaccess.faculty.dao.Faculty@503d687a
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 1, object: main.dataaccess.faculty.dao.Faculty@503d687a
+2021-06-28 14:19:07 INFO  ISERTING  ---> main.dataaccess.department.dao.Department@2abf4075
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@4cc8eb05
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@4cc8eb05
+2021-06-28 14:19:07 INFO  ISERTING  ---> main.dataaccess.department.dao.Department@51f116b8
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 1, object: main.dataaccess.department.dao.Department@2abf4075
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.department.dao.Department@51f116b8
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@4cc8eb05
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@4cc8eb05
+2021-06-28 14:19:07 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.department.dao.Department@19d481b
+2021-06-28 14:19:07 INFO  SELECTING ---> ID: 2, object: main.dataaccess.department.dao.Department@19d481b
+2021-06-28 14:25:38 INFO  ISERTING  ---> main.dataaccess.apigroup.dao.ApiGroup@6e509ffa
+2021-06-28 14:25:38 INFO  ISERTING  ---> main.dataaccess.apigroup.dao.ApiGroup@fa36558
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroup.dao.ApiGroup@672872e1
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@3571b748
+2021-06-28 14:25:38 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@3e96bacf
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@3e96bacf
+2021-06-28 14:25:38 INFO  DELETING  ---> ID: 3
+2021-06-28 14:25:38 INFO  ISERTING  ---> main.dataaccess.apiuser.dao.ApiUser@5552768b
+2021-06-28 14:25:38 INFO  ISERTING  ---> main.dataaccess.apiuser.dao.ApiUser@609db43b
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apiuser.dao.ApiUser@55f616cf
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@1356d4d4
+2021-06-28 14:25:38 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@c03cf28
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@c03cf28
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroup.dao.ApiGroup@4ef37659
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apiuser.dao.ApiUser@776b83cc
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroup.dao.ApiGroup@4ef37659
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apiuser.dao.ApiUser@776b83cc
+2021-06-28 14:25:38 INFO  ISERTING  ---> main.dataaccess.apigroupuser.dao.ApiGroupUser@1bb266b3
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@2beee7ff
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@5136d012
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@2beee7ff
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@5136d012
+2021-06-28 14:25:38 INFO  ISERTING  ---> main.dataaccess.apigroupuser.dao.ApiGroupUser@355ce81c
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroupuser.dao.ApiGroupUser@29647f75
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroupuser.dao.ApiGroupUser@3315d2d7
+2021-06-28 14:25:38 INFO  ISERTING  ---> main.dataaccess.faculty.dao.Faculty@51f116b8
+2021-06-28 14:25:38 INFO  ISERTING  ---> main.dataaccess.faculty.dao.Faculty@1f97cf0d
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 1, object: main.dataaccess.faculty.dao.Faculty@140c9f39
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@4d910fd6
+2021-06-28 14:25:38 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@26275bef
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@26275bef
+2021-06-28 14:25:38 INFO  DELETING  ---> ID: 3
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 1, object: main.dataaccess.faculty.dao.Faculty@346d61be
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 1, object: main.dataaccess.faculty.dao.Faculty@346d61be
+2021-06-28 14:25:38 INFO  ISERTING  ---> main.dataaccess.department.dao.Department@55536d9e
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@3d1cfad4
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@3d1cfad4
+2021-06-28 14:25:38 INFO  ISERTING  ---> main.dataaccess.department.dao.Department@62230c58
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 1, object: main.dataaccess.department.dao.Department@2cd2a21f
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.department.dao.Department@2e55dd0c
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@3d1cfad4
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@3d1cfad4
+2021-06-28 14:25:38 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.department.dao.Department@74455848
+2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.department.dao.Department@74455848
