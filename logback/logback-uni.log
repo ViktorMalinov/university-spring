@@ -313,3 +313,123 @@ Caused by: org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Data
 2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@3d1cfad4
 2021-06-28 14:25:38 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.department.dao.Department@74455848
 2021-06-28 14:25:38 INFO  SELECTING ---> ID: 2, object: main.dataaccess.department.dao.Department@74455848
+2021-07-01 15:48:39 INFO  ISERTING  ---> main.dataaccess.apigroup.dao.ApiGroup@6e509ffa
+2021-07-01 15:48:39 INFO  ISERTING  ---> main.dataaccess.apigroup.dao.ApiGroup@fa36558
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroup.dao.ApiGroup@672872e1
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@3571b748
+2021-07-01 15:48:39 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@3e96bacf
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@3e96bacf
+2021-07-01 15:48:39 INFO  DELETING  ---> ID: 3
+2021-07-01 15:48:39 INFO  ISERTING  ---> main.dataaccess.apiuser.dao.ApiUser@609db43b
+2021-07-01 15:48:39 INFO  ISERTING  ---> main.dataaccess.apiuser.dao.ApiUser@1356d4d4
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apiuser.dao.ApiUser@c03cf28
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@1329eff
+2021-07-01 15:48:39 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@6497b078
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@6497b078
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroup.dao.ApiGroup@1649b0e6
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apiuser.dao.ApiUser@865dd6
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroup.dao.ApiGroup@1649b0e6
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apiuser.dao.ApiUser@865dd6
+2021-07-01 15:48:39 INFO  ISERTING  ---> main.dataaccess.apigroupuser.dao.ApiGroupUser@4da4253
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@62e7f11d
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@503d687a
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroup.dao.ApiGroup@62e7f11d
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apiuser.dao.ApiUser@503d687a
+2021-07-01 15:48:39 INFO  ISERTING  ---> main.dataaccess.apigroupuser.dao.ApiGroupUser@6a370f4
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 1, object: main.dataaccess.apigroupuser.dao.ApiGroupUser@2abf4075
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.apigroupuser.dao.ApiGroupUser@770d3326
+2021-07-01 15:48:39 INFO  ISERTING  ---> main.dataaccess.faculty.dao.Faculty@68c72235
+2021-07-01 15:48:39 INFO  ISERTING  ---> main.dataaccess.faculty.dao.Faculty@3a6bb9bf
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 1, object: main.dataaccess.faculty.dao.Faculty@34f7cfd9
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@65f095f8
+2021-07-01 15:48:39 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@59af0466
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@59af0466
+2021-07-01 15:48:39 INFO  DELETING  ---> ID: 3
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 1, object: main.dataaccess.faculty.dao.Faculty@72cde7cc
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 1, object: main.dataaccess.faculty.dao.Faculty@72cde7cc
+2021-07-01 15:48:39 INFO  ISERTING  ---> main.dataaccess.department.dao.Department@5fd4f8f5
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@4e7912d8
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@4e7912d8
+2021-07-01 15:48:39 INFO  ISERTING  ---> main.dataaccess.department.dao.Department@53976f5c
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 1, object: main.dataaccess.department.dao.Department@2bfc268b
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.department.dao.Department@2f8dad04
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@4e7912d8
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.faculty.dao.Faculty@4e7912d8
+2021-07-01 15:48:39 INFO  UPDATING  ---> ID: 2, object: main.dataaccess.department.dao.Department@29e495ff
+2021-07-01 15:48:39 INFO  SELECTING ---> ID: 2, object: main.dataaccess.department.dao.Department@29e495ff
+2021-07-01 16:28:31 INFO  Starting UniversitySpringApplication using Java 16 on VIKTOR-PC with PID 2960 (D:\workspace\Java\Test\university-spring\bin\main started by Viktor Malinov in D:\workspace\Java\Test\university-spring)
+2021-07-01 16:28:31 INFO  No active profile set, falling back to default profiles: default
+2021-07-01 16:28:31 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-01 16:28:31 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-01 16:28:35 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-01 16:28:35 INFO  Finished Spring Data repository scanning in 27 ms. Found 0 JPA repository interfaces.
+2021-07-01 16:28:38 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-01 16:28:38 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-01 16:28:38 INFO  Starting service [Tomcat]
+2021-07-01 16:28:38 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-01 16:28:38 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-01 16:28:38 INFO  Root WebApplicationContext: initialization completed in 6599 ms
+2021-07-01 16:28:39 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-01 16:28:39 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-01 16:28:39 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-01 16:28:40 INFO  HikariPool-1 - Starting...
+2021-07-01 16:28:40 INFO  HikariPool-1 - Start completed.
+2021-07-01 16:28:40 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-01 16:28:41 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-01 16:28:41 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-01 16:28:41 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-01 16:28:43 INFO  LiveReload server is running on port 35729
+2021-07-01 16:28:43 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-01 16:28:43 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-01 16:28:43 INFO  Started UniversitySpringApplication in 13.827 seconds (JVM running for 16.615)
+2021-07-01 17:29:00 INFO  Starting UniversitySpringApplication using Java 16 on VIKTOR-PC with PID 8720 (D:\workspace\Java\Test\university-spring\bin\main started by Viktor Malinov in D:\workspace\Java\Test\university-spring)
+2021-07-01 17:29:00 INFO  No active profile set, falling back to default profiles: default
+2021-07-01 17:29:00 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-01 17:29:00 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-01 17:29:03 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-01 17:29:03 INFO  Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2021-07-01 17:29:05 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-01 17:29:05 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-01 17:29:05 INFO  Starting service [Tomcat]
+2021-07-01 17:29:05 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-01 17:29:05 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-01 17:29:05 INFO  Root WebApplicationContext: initialization completed in 4621 ms
+2021-07-01 17:29:05 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-01 17:29:06 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-01 17:29:06 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-01 17:29:06 INFO  HikariPool-1 - Starting...
+2021-07-01 17:29:07 INFO  HikariPool-1 - Start completed.
+2021-07-01 17:29:07 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-01 17:29:08 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-01 17:29:08 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-01 17:29:08 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-01 17:29:09 INFO  LiveReload server is running on port 35729
+2021-07-01 17:29:09 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-01 17:29:09 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-01 17:29:09 INFO  Started UniversitySpringApplication in 10.342 seconds (JVM running for 11.976)
+2021-07-01 17:31:32 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-01 17:31:32 INFO  HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-07-01 17:31:32 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-01 17:31:32 INFO  HikariPool-1 - Shutdown completed.
+2021-07-01 17:31:32 INFO  Starting UniversitySpringApplication using Java 16 on VIKTOR-PC with PID 8720 (D:\workspace\Java\Test\university-spring\bin\main started by Viktor Malinov in D:\workspace\Java\Test\university-spring)
+2021-07-01 17:31:32 INFO  No active profile set, falling back to default profiles: default
+2021-07-01 17:31:32 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-01 17:31:32 INFO  Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2021-07-01 17:31:33 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-01 17:31:33 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-01 17:31:33 INFO  Starting service [Tomcat]
+2021-07-01 17:31:33 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-01 17:31:33 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-01 17:31:33 INFO  Root WebApplicationContext: initialization completed in 1086 ms
+2021-07-01 17:31:33 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-01 17:31:33 INFO  HikariPool-2 - Starting...
+2021-07-01 17:31:33 INFO  HikariPool-2 - Start completed.
+2021-07-01 17:31:33 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-01 17:31:33 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-01 17:31:33 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-01 17:31:33 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-01 17:31:34 INFO  LiveReload server is running on port 35729
+2021-07-01 17:31:34 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-01 17:31:34 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-01 17:31:34 INFO  Started UniversitySpringApplication in 2.326 seconds (JVM running for 156.688)
+2021-07-01 17:31:34 INFO  Condition evaluation unchanged
