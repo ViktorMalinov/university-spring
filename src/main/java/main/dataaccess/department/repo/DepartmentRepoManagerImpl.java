@@ -11,8 +11,10 @@ public class DepartmentRepoManagerImpl extends PersistentRepoManagerImpl<Departm
 
 	
 	//private static Map<Long, Department> datasource = new HashMap<Long, Department>();
+	
 	@Autowired
 	private CrudRepository<Department, Long> datasource;
+	
 	
 	public String getPath() {
         String file = Utils.getResourceFolder() + "\\datafiles\\Department.json"; 
@@ -34,8 +36,5 @@ public class DepartmentRepoManagerImpl extends PersistentRepoManagerImpl<Departm
 		return Department.class;
 	}
 
-	public DepartmentRepoManagerImpl() {
-		load();
-	}
 
 }

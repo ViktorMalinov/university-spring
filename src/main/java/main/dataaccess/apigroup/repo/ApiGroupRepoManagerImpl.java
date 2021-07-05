@@ -1,7 +1,7 @@
 package main.dataaccess.apigroup.repo;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.CrudRepository;
 
 import main.common.Utils;
 import main.dataaccess.apigroup.dao.ApiGroup;
@@ -9,17 +9,14 @@ import main.dataaccess.common.PersistentRepoManagerImpl;
 
 public class ApiGroupRepoManagerImpl extends PersistentRepoManagerImpl<ApiGroup> implements ApiGroupRepoManager {
 
-	private static Map<Long, ApiGroup> datasource = new HashMap<Long, ApiGroup>();
+	//private static Map<Long, ApiGroup> datasource = new HashMap<Long, ApiGroup>();
 
-	
-	public ApiGroupRepoManagerImpl() {
-		load();
-	}
-	
+	@Autowired
+	private CrudRepository<ApiGroup, Long> datasource;
 	
 	
 	@Override
-	public Map<Long, ApiGroup> getDataSource() {
+	public CrudRepository<ApiGroup, Long> getDataSource() {
 		return datasource;
 	}
 

@@ -1,7 +1,7 @@
 package main.dataaccess.facultydiscipline.repo;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.CrudRepository;
 
 import main.common.Utils;
 import main.dataaccess.common.PersistentRepoManagerImpl;
@@ -9,10 +9,14 @@ import main.dataaccess.facultydiscipline.dao.FacultyDiscipline;
 
 public class FacultyDisciplineRepoManagerImpl extends PersistentRepoManagerImpl<FacultyDiscipline> implements FacultyDisciplineRepoManager {
 
-	private static Map<Long, FacultyDiscipline> datasource = new HashMap<Long, FacultyDiscipline>();
+	//private static Map<Long, FacultyDiscipline> datasource = new HashMap<Long, FacultyDiscipline>();
 
+	@Autowired
+	private CrudRepository<FacultyDiscipline, Long> datasource;
+	
+	
 	@Override
-	public Map<Long, FacultyDiscipline> getDataSource() {
+	public CrudRepository<FacultyDiscipline, Long> getDataSource() {
 		return datasource;
 	}
 
@@ -27,7 +31,5 @@ public class FacultyDisciplineRepoManagerImpl extends PersistentRepoManagerImpl<
 		return FacultyDiscipline.class;
 	}
 
-	public FacultyDisciplineRepoManagerImpl() {
-		load();
-	}
+
 }
