@@ -4,7 +4,7 @@ import main.business.common.BaseProcessorImpl;
 import main.business.discipline.transformer.DisciplineParamTransformerImpl;
 import main.business.discipline.transformer.DisciplineResultTransformerImpl;
 import main.dataaccess.discipline.dao.Discipline;
-import main.dataaccess.discipline.dao.DisciplineDaoHMapImpl;
+import main.dataaccess.discipline.dao.DisciplineDaoImpl;
 import main.service.discipline.DisciplineParam;
 import main.service.discipline.DisciplineResult;
 
@@ -13,15 +13,17 @@ public class DisciplineProcessorImpl
 		DisciplineParam,
 		DisciplineResult,
 		Discipline,
-		DisciplineDaoHMapImpl,
+		DisciplineDaoImpl,
 		DisciplineParamTransformerImpl,
 		DisciplineResultTransformerImpl,
 		Long >
 		implements DisciplineProcessor {
-
+	
+	/*
 	public DisciplineProcessorImpl() {
-		this.dao = new DisciplineDaoHMapImpl();
+		this.dao = new DisciplineDaoImpl();
 		this.paramTransformer = new DisciplineParamTransformerImpl();
 		this.resultTransformer = new DisciplineResultTransformerImpl();
 	}
+	*/
 }

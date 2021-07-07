@@ -9,10 +9,11 @@ public class ApiUserParamTransformerImpl
 		extends BaseParamTransformerImpl<ApiUserParam, ApiUser, ApiUserParamValidatorImpl>
 		implements ApiUserParamTransformer {
 
-
+	/*
 	public ApiUserParamTransformerImpl() {
 		this.validator = new ApiUserParamValidatorImpl();
 	}
+	*/
 	
 	@Override
 	protected ApiUser getNewEntity() {

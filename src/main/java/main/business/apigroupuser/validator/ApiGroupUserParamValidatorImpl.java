@@ -1,21 +1,24 @@
 package main.business.apigroupuser.validator;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import main.business.common.BaseParamValidatorImpl;
 import main.common.Constants;
 import main.common.ErrCode;
 import main.common.UniversityBaseException;
 import main.dataaccess.apigroup.dao.ApiGroup;
 import main.dataaccess.apigroup.dao.ApiGroupDao;
-import main.dataaccess.apigroup.dao.ApiGroupDaoHMapImpl;
 import main.dataaccess.apiuser.dao.ApiUser;
 import main.dataaccess.apiuser.dao.ApiUserDao;
-import main.dataaccess.apiuser.dao.ApiUserDaoHMapImpl;
 import main.service.apigroupuser.ApiGroupUserParam;
 
 public class ApiGroupUserParamValidatorImpl extends BaseParamValidatorImpl <ApiGroupUserParam> implements ApiGroupUserParamValidator{
 
-	ApiGroupDao	apiGroupDao = new ApiGroupDaoHMapImpl();
-	ApiUserDao apiUserDao = new ApiUserDaoHMapImpl();
+	@Autowired
+	ApiGroupDao	apiGroupDao; // = new ApiGroupDaoImpl();
+	
+	@Autowired
+	ApiUserDao apiUserDao; // = new ApiUserDaoImpl();
 	
 	@Override
 	public void customValidate(ApiGroupUserParam param) throws Exception {

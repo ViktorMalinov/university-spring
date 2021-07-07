@@ -1,7 +1,7 @@
 package main.business.common;
 
-import main.common.UniversityBaseException;
-import main.common.Utils;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import main.dataaccess.common.BaseDao;
 import main.dataaccess.common.Persistent;
 import main.service.common.BaseDto;
@@ -17,14 +17,19 @@ public class BaseDtoProcessorImpl<
 		implements BaseProcessor<IN, OUT, PK> {
 
 
+	@Autowired
 	protected DAO dao;
+	
+	@Autowired
 	protected PTR paramTransformer;
+	
+	@Autowired
 	protected RTR resultTransformer;
 	
 	
 	@Override
 	public OUT create(IN param) throws Exception {
-		try {  // ONLY FOR TEST !!!
+		//try {  // ONLY FOR TEST !!!
 
 			ENT entity = paramTransformer.transform(param); 
 			
@@ -32,11 +37,11 @@ public class BaseDtoProcessorImpl<
 			
 			OUT result = resultTransformer.transform(entity);
 			return result;
-		}
-		catch (UniversityBaseException e) {
-			Utils.log(e.getMessage(), e.getErrCode());
-			throw e;
-		}
+		//}
+		//catch (UniversityBaseException e) {
+			//Utils.log(e.getMessage(), e.getErrCode());
+			//throw e;
+		//}
 	}
 
 	@Override

@@ -47,8 +47,5 @@ public class Persistent {
 		this.id = id;
 	}
 	
-	public Persistent() {
-		
-	};
 	
 }

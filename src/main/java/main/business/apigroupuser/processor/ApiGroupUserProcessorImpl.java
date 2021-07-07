@@ -4,7 +4,7 @@ import main.business.apigroupuser.transformer.ApiGroupUserParamTransformerImpl;
 import main.business.apigroupuser.transformer.ApiGroupUserResultTransformerImpl;
 import main.business.common.BaseDtoProcessorImpl;
 import main.dataaccess.apigroupuser.dao.ApiGroupUser;
-import main.dataaccess.apigroupuser.dao.ApiGroupUserDaoHMapImpl;
+import main.dataaccess.apigroupuser.dao.ApiGroupUserDaoImpl;
 import main.service.apigroupuser.ApiGroupUserParam;
 import main.service.apigroupuser.ApiGroupUserResult;
 
@@ -13,17 +13,17 @@ public class ApiGroupUserProcessorImpl
 		ApiGroupUserParam,
 		ApiGroupUserResult,
 		ApiGroupUser,
-		ApiGroupUserDaoHMapImpl,
+		ApiGroupUserDaoImpl,
 		ApiGroupUserParamTransformerImpl,
 		ApiGroupUserResultTransformerImpl,
 		Long >
 		implements ApiGroupUserProcessor {
 
-
+	/*
 	public ApiGroupUserProcessorImpl() {
-		this.dao = new ApiGroupUserDaoHMapImpl();
+		this.dao = new ApiGroupUserDaoImpl();
 		this.paramTransformer = new ApiGroupUserParamTransformerImpl();
 		this.resultTransformer = new ApiGroupUserResultTransformerImpl();
 	}
-
+	*/
 }

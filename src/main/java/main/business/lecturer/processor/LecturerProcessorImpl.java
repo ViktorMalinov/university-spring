@@ -4,7 +4,7 @@ import main.business.common.BaseProcessorImpl;
 import main.business.lecturer.transformer.LecturerParamTransformerImpl;
 import main.business.lecturer.transformer.LecturerResultTransformerImpl;
 import main.dataaccess.lecturer.dao.Lecturer;
-import main.dataaccess.lecturer.dao.LecturerDaoHMapImpl;
+import main.dataaccess.lecturer.dao.LecturerDaoImpl;
 import main.service.lecturer.LecturerParam;
 import main.service.lecturer.LecturerResult;
 
@@ -13,16 +13,18 @@ public class LecturerProcessorImpl
 		LecturerParam,
 		LecturerResult,
 		Lecturer,
-		LecturerDaoHMapImpl,
+		LecturerDaoImpl,
 		LecturerParamTransformerImpl,
 		LecturerResultTransformerImpl,
 		Long >
 		implements LecturerProcessor {
 
+	/*
 	public LecturerProcessorImpl() {
-		this.dao = new LecturerDaoHMapImpl();
+		this.dao = new LecturerDaoImpl();
 		this.paramTransformer = new LecturerParamTransformerImpl();
 		this.resultTransformer = new LecturerResultTransformerImpl();
 	}
+	*/
 
 }

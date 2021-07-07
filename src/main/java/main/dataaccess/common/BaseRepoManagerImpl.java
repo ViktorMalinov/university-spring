@@ -11,8 +11,6 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 
 	
 	protected abstract PK getPk(ENT entity);
-	protected abstract void setPk(ENT entity);
-	protected abstract String getPath();
 	protected abstract Class<?> getClazz(); 
 	protected static Logger logger = LoggerFactory.getLogger(BaseRepoManagerImpl.class);
 
@@ -49,7 +47,8 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 		
 		getDataSource().save(entity);		
 		
-		logger.info("UPDATING  ---> ID: " + getPk(entity).toString() + ", object: " + entity.toString());
+		logger.info("UPDATING  --->  object: " + entity.toString());
+		
 	}
 
 	@Override
@@ -63,7 +62,7 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 	public List<ENT> selectAll() {
 		List<ENT> result = new ArrayList<ENT>();
 		
-		Iterable <ENT> entity = getDataSource().findAll();
+		Iterable<ENT> entity = getDataSource().findAll();
 		
 		entity.forEach(result::add);
 		

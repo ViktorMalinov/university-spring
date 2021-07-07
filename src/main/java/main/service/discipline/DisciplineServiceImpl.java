@@ -1,9 +1,13 @@
 package main.service.discipline;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
 import main.business.discipline.processor.DisciplineProcessor;
-import main.business.discipline.processor.DisciplineProcessorImpl;
 import main.service.common.BaseServiceImpl;
 
+@Controller
+@RequestMapping(value = "/discipline", produces = "application/json", consumes = "application/json")
 public class DisciplineServiceImpl 
 extends BaseServiceImpl<
 		DisciplineParam,
@@ -12,8 +16,10 @@ extends BaseServiceImpl<
 		Long>
 		implements DisciplineService {
 
+	/*
 	public DisciplineServiceImpl() {
 		this.processor = new DisciplineProcessorImpl();
 	}
+	*/
 
 }

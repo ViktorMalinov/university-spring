@@ -10,9 +10,11 @@ public class FacultyParamTransformerImpl
 		implements FacultyParamTransformer {
 
 
+	/*
 	public FacultyParamTransformerImpl() {
 		this.validator = new FacultyParamValidatorImpl();
 	}
+	*/
 	
 	@Override
 	protected Faculty getNewEntity() {

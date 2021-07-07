@@ -1,21 +1,23 @@
 package main.business.facultydiscipline.validator;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import main.business.common.BaseParamValidatorImpl;
 import main.common.Constants;
 import main.common.ErrCode;
 import main.common.UniversityBaseException;
 import main.dataaccess.discipline.dao.Discipline;
 import main.dataaccess.discipline.dao.DisciplineDao;
-import main.dataaccess.discipline.dao.DisciplineDaoHMapImpl;
 import main.dataaccess.faculty.dao.Faculty;
 import main.dataaccess.faculty.dao.FacultyDao;
-import main.dataaccess.faculty.dao.FacultyDaoHMapImpl;
 import main.service.facultydiscipline.FacultyDisciplineParam;
 
 public class FacultyDisciplineParamValidatorImpl extends BaseParamValidatorImpl <FacultyDisciplineParam> implements FacultyDisciplineParamValidator{
 
-	private FacultyDao facultyDao = new FacultyDaoHMapImpl();
-	private DisciplineDao disciplineDao = new DisciplineDaoHMapImpl(); 
+	@Autowired
+	private FacultyDao facultyDao; // = new FacultyDaoImpl();
+	@Autowired
+	private DisciplineDao disciplineDao; // = new DisciplineDaoImpl(); 
 	
 	@Override
 	public void customValidate(FacultyDisciplineParam param) throws Exception {

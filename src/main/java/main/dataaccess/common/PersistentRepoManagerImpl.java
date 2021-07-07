@@ -5,21 +5,21 @@ public abstract class PersistentRepoManagerImpl<ENT extends Persistent> extends 
 
 	// protected Map<PK, ENT> datasource = new HashMap<PK, ENT>();
 
-	
 	@Override
 	public Long getPk(ENT entity) {
 		return entity.getId();
 	}
 
-	
+
+	/*
 	@Override
 	public void setPk(ENT entity) {
 
-		//Set<Long> idSet = getDataSource().keySet();		// get all id's from db object
-		//Long id = Utils.getNextId(idSet); 	// get next id
-		//entity.setId(id);		
+		Set<Long> idSet = getDataSource().keySet();		// get all id's from db object
+		Long id = Utils.getNextId(idSet); 	// get next id
+		entity.setId(id);		
 	}
-	
+	*/
 
 	
 }

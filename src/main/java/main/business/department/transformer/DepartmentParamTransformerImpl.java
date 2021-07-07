@@ -1,23 +1,27 @@
 package main.business.department.transformer;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import main.business.common.BaseParamTransformerImpl;
 import main.business.department.validator.DepartmentParamValidatorImpl;
 import main.dataaccess.department.dao.Department;
 import main.dataaccess.faculty.dao.Faculty;
 import main.dataaccess.faculty.dao.FacultyDao;
-import main.dataaccess.faculty.dao.FacultyDaoHMapImpl;
 import main.service.department.DepartmentParam;
 
 public class DepartmentParamTransformerImpl 
 		extends BaseParamTransformerImpl<DepartmentParam, Department, DepartmentParamValidatorImpl> 
 		implements DepartmentParamTransformer {
 
-		
-	private FacultyDao dao = new FacultyDaoHMapImpl();
 	
+	@Autowired
+	private FacultyDao dao; // = new FacultyDaoImpl();
+	
+	/*
 	public DepartmentParamTransformerImpl() {
 		this.validator = new DepartmentParamValidatorImpl();
 	}
+	*/
 	
 	@Override
 	protected Department getNewEntity() {

@@ -1,5 +1,7 @@
 package main.service.common;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import main.business.common.BaseProcessor;
 
 public class BaseDtoServiceImpl<
@@ -8,7 +10,8 @@ public class BaseDtoServiceImpl<
 		PRC extends BaseProcessor<IN, OUT, PK>,
 		PK> 
 		implements BaseService<IN, OUT, PK> {
-
+	
+	@Autowired
 	protected PRC processor;
 	
 	@Override

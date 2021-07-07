@@ -1,17 +1,19 @@
 package main.business.speciality.validator;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import main.business.common.BaseParamValidatorImpl;
 import main.common.Constants;
 import main.common.ErrCode;
 import main.common.UniversityBaseException;
 import main.dataaccess.faculty.dao.Faculty;
 import main.dataaccess.faculty.dao.FacultyDao;
-import main.dataaccess.faculty.dao.FacultyDaoHMapImpl;
 import main.service.speciality.SpecialityParam;
 
 public class SpecialityParamValidatorImpl extends BaseParamValidatorImpl <SpecialityParam> implements SpecialityParamValidator{
 
-	private FacultyDao dao = new FacultyDaoHMapImpl();
+	@Autowired
+	private FacultyDao dao; // = new FacultyDaoImpl();
 	
 	@Override
 	public void customValidate(SpecialityParam param) throws Exception {

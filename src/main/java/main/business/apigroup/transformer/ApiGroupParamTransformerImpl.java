@@ -10,10 +10,12 @@ public class ApiGroupParamTransformerImpl
 		implements ApiGroupParamTransformer {
 
 	
+	/*
 	public ApiGroupParamTransformerImpl() {
 		this.validator = new ApiGroupParamValidatorImpl();
 	}
-
+	*/
+	
 	@Override
 	protected ApiGroup getNewEntity() {
 		ApiGroup entity = new ApiGroup();

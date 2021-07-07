@@ -458,3 +458,54 @@ Caused by: org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Data
 2021-07-02 10:49:17 INFO  Starting ProtocolHandler ["http-nio-8080"]
 2021-07-02 10:49:18 INFO  Tomcat started on port(s): 8080 (http) with context path ''
 2021-07-02 10:49:18 INFO  Started UniversitySpringApplication in 8.525 seconds (JVM running for 10.211)
+2021-07-06 10:10:06 INFO  Starting UniversitySpringApplication using Java 16 on VIKTOR-PC with PID 10444 (D:\workspace\Java\Test\university-spring\bin\main started by Viktor Malinov in D:\workspace\Java\Test\university-spring)
+2021-07-06 10:10:06 INFO  No active profile set, falling back to default profiles: default
+2021-07-06 10:10:07 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-06 10:10:07 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-06 10:10:09 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-06 10:10:09 INFO  Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2021-07-06 10:10:11 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-06 10:10:11 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-06 10:10:11 INFO  Starting service [Tomcat]
+2021-07-06 10:10:11 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-06 10:10:11 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-06 10:10:11 INFO  Root WebApplicationContext: initialization completed in 4440 ms
+2021-07-06 10:10:12 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-06 10:10:12 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-06 10:10:13 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-06 10:10:13 INFO  HikariPool-1 - Starting...
+2021-07-06 10:10:13 INFO  HikariPool-1 - Start completed.
+2021-07-06 10:10:13 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-06 10:10:14 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-06 10:10:14 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-06 10:10:14 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-06 10:10:16 INFO  LiveReload server is running on port 35729
+2021-07-06 10:10:16 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-06 10:10:16 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-06 10:10:16 INFO  Started UniversitySpringApplication in 10.652 seconds (JVM running for 12.279)
+2021-07-06 10:27:41 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-06 10:27:41 INFO  HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-07-06 10:27:41 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-06 10:27:41 INFO  HikariPool-1 - Shutdown completed.
+2021-07-06 10:27:42 INFO  Starting UniversitySpringApplication using Java 16 on VIKTOR-PC with PID 10444 (D:\workspace\Java\Test\university-spring\bin\main started by Viktor Malinov in D:\workspace\Java\Test\university-spring)
+2021-07-06 10:27:42 INFO  No active profile set, falling back to default profiles: default
+2021-07-06 10:27:43 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-06 10:27:43 INFO  Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2021-07-06 10:27:44 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-06 10:27:44 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-06 10:27:44 INFO  Starting service [Tomcat]
+2021-07-06 10:27:44 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-06 10:27:44 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-06 10:27:44 INFO  Root WebApplicationContext: initialization completed in 1677 ms
+2021-07-06 10:27:44 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-06 10:27:44 INFO  HikariPool-2 - Starting...
+2021-07-06 10:27:44 INFO  HikariPool-2 - Start completed.
+2021-07-06 10:27:44 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-06 10:27:44 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-06 10:27:44 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-06 10:27:44 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-06 10:27:45 INFO  LiveReload server is running on port 35729
+2021-07-06 10:27:45 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-06 10:27:45 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-06 10:27:45 INFO  Started UniversitySpringApplication in 3.991 seconds (JVM running for 1061.292)
+2021-07-06 10:27:45 INFO  Condition evaluation unchanged

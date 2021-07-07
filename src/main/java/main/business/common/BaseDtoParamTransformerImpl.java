@@ -1,5 +1,7 @@
 package main.business.common;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import main.dataaccess.common.Persistent;
 import main.service.common.BaseDto;
 
@@ -8,6 +10,7 @@ public abstract class BaseDtoParamTransformerImpl<
 		ENT extends Persistent, 
 		VAL extends BaseParamValidatorImpl<IN> > implements BaseParamTransformer<IN, ENT> {
 
+	@Autowired
 	protected VAL validator;
 	
 	protected abstract ENT getNewEntity(); 

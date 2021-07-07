@@ -9,10 +9,12 @@ public class DisciplineParamTransformerImpl
 		extends BaseParamTransformerImpl<DisciplineParam, Discipline, DisciplineParamValidatorImpl>
 		implements DisciplineParamTransformer {
 
-
+	
+	/*
 	public DisciplineParamTransformerImpl() {
 		this.validator = new DisciplineParamValidatorImpl();
 	}
+	*/
 	
 	@Override
 	protected Discipline getNewEntity() {

@@ -2,8 +2,11 @@ package main.dataaccess.common;
 
 import java.util.List;
 
-public class BaseDaoHMapImpl <PK, ENT, MAN extends BaseRepoManager<PK,ENT>> implements BaseDao <PK, ENT> {
+import org.springframework.beans.factory.annotation.Autowired;
 
+public class BaseDaoImpl <PK, ENT, MAN extends BaseRepoManager<PK,ENT>> implements BaseDao <PK, ENT> {
+
+	@Autowired
 	protected MAN repoManager;
 	
 	@Override

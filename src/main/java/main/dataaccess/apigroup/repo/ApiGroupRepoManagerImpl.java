@@ -9,7 +9,6 @@ import main.dataaccess.common.PersistentRepoManagerImpl;
 
 public class ApiGroupRepoManagerImpl extends PersistentRepoManagerImpl<ApiGroup> implements ApiGroupRepoManager {
 
-	//private static Map<Long, ApiGroup> datasource = new HashMap<Long, ApiGroup>();
 
 	@Autowired
 	private CrudRepository<ApiGroup, Long> datasource;
