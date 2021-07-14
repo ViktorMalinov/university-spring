@@ -1,5 +1,7 @@
 package main.business.lecturer.processor;
 
+import org.springframework.stereotype.Component;
+
 import main.business.common.BaseProcessorImpl;
 import main.business.lecturer.transformer.LecturerParamTransformerImpl;
 import main.business.lecturer.transformer.LecturerResultTransformerImpl;
@@ -8,6 +10,7 @@ import main.dataaccess.lecturer.dao.LecturerDaoImpl;
 import main.service.lecturer.LecturerParam;
 import main.service.lecturer.LecturerResult;
 
+@Component
 public class LecturerProcessorImpl 
 		extends BaseProcessorImpl<
 		LecturerParam,

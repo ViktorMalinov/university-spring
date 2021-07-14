@@ -1,6 +1,7 @@
 package main.business.lecturer.validator;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import main.business.common.BaseParamValidatorImpl;
 import main.common.Constants;
@@ -12,6 +13,7 @@ import main.dataaccess.department.dao.Department;
 import main.dataaccess.department.dao.DepartmentDao;
 import main.service.lecturer.LecturerParam;
 
+@Component
 public class LecturerParamValidatorImpl extends BaseParamValidatorImpl <LecturerParam> implements LecturerParamValidator{
 
 	@Autowired

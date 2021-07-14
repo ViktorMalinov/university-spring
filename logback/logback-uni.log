@@ -8762,3 +8762,1512 @@ Action:
 
 Consider defining a bean of type 'main.dataaccess.apigroup.repo.ApiGroupCrudRepository' in your configuration.
 
+2021-07-14 15:11:01 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 18476 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 15:11:01 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 15:11:01 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 15:11:01 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 15:11:01 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 15:11:01 INFO  Finished Spring Data repository scanning in 133 ms. Found 1 JPA repository interfaces.
+2021-07-14 15:11:02 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 15:11:02 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 15:11:02 INFO  Starting service [Tomcat]
+2021-07-14 15:11:02 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 15:11:02 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 15:11:02 INFO  Root WebApplicationContext: initialization completed in 1335 ms
+2021-07-14 15:11:02 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 15:11:02 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 15:11:02 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 15:11:02 INFO  HikariPool-1 - Starting...
+2021-07-14 15:11:02 INFO  HikariPool-1 - Start completed.
+2021-07-14 15:11:02 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 15:11:03 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 15:11:03 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 15:11:03 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 15:11:04 INFO  LiveReload server is running on port 35729
+2021-07-14 15:11:04 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 15:11:04 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 15:11:04 INFO  Started UniversitySpringApplication in 3.521 seconds (JVM running for 3.976)
+2021-07-14 15:15:03 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 19264 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 15:15:03 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 15:15:03 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 15:15:03 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 15:15:03 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 15:15:03 INFO  Finished Spring Data repository scanning in 125 ms. Found 1 JPA repository interfaces.
+2021-07-14 15:15:04 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 15:15:04 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 15:15:04 INFO  Starting service [Tomcat]
+2021-07-14 15:15:04 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 15:15:04 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 15:15:04 INFO  Root WebApplicationContext: initialization completed in 1343 ms
+2021-07-14 15:15:04 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 15:15:04 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 15:15:04 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 15:15:05 INFO  HikariPool-1 - Starting...
+2021-07-14 15:15:05 INFO  HikariPool-1 - Start completed.
+2021-07-14 15:15:05 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 15:15:05 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 15:15:05 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 15:15:05 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseDtoProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type '?' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 15:15:05 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 15:15:05 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 15:15:05 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 15:15:05 INFO  Stopping service [Tomcat]
+2021-07-14 15:15:05 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 15:15:05 ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseDtoProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type '?' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at universityspring.UniversitySpringApplication.main(UniversitySpringApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type '?' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+2021-07-14 15:17:57 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 1440 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 15:17:57 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 15:17:57 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 15:17:57 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 15:17:57 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 15:17:58 INFO  Finished Spring Data repository scanning in 128 ms. Found 1 JPA repository interfaces.
+2021-07-14 15:17:58 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 15:17:58 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 15:17:58 INFO  Starting service [Tomcat]
+2021-07-14 15:17:58 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 15:17:58 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 15:17:58 INFO  Root WebApplicationContext: initialization completed in 1366 ms
+2021-07-14 15:17:58 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 15:17:58 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 15:17:59 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 15:17:59 INFO  HikariPool-1 - Starting...
+2021-07-14 15:17:59 INFO  HikariPool-1 - Start completed.
+2021-07-14 15:17:59 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 15:18:00 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 15:18:00 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 15:18:00 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroup.dao.ApiGroupDaoImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 15:18:00 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 15:18:00 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 15:18:00 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 15:18:00 INFO  Stopping service [Tomcat]
+2021-07-14 15:18:00 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 15:18:00 ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroup.dao.ApiGroupDaoImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at universityspring.UniversitySpringApplication.main(UniversitySpringApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroup.dao.ApiGroupDaoImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+2021-07-14 15:18:46 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 19292 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 15:18:46 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 15:18:46 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 15:18:46 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 15:18:46 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 15:18:46 INFO  Finished Spring Data repository scanning in 121 ms. Found 1 JPA repository interfaces.
+2021-07-14 15:18:47 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 15:18:47 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 15:18:47 INFO  Starting service [Tomcat]
+2021-07-14 15:18:47 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 15:18:47 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 15:18:47 INFO  Root WebApplicationContext: initialization completed in 1339 ms
+2021-07-14 15:18:47 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 15:18:47 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 15:18:47 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 15:18:47 INFO  HikariPool-1 - Starting...
+2021-07-14 15:18:47 INFO  HikariPool-1 - Start completed.
+2021-07-14 15:18:47 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 15:18:48 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 15:18:48 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 15:18:49 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 15:18:49 INFO  LiveReload server is running on port 35729
+2021-07-14 15:18:49 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 15:18:49 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 15:18:49 INFO  Started UniversitySpringApplication in 3.483 seconds (JVM running for 3.945)
+2021-07-14 15:39:40 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 15:39:40 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 15:39:40 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 15:39:40 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 19292 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 15:39:40 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 15:39:41 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 15:39:41 INFO  Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interfaces.
+2021-07-14 15:39:41 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 15:39:41 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 15:39:41 INFO  Starting service [Tomcat]
+2021-07-14 15:39:41 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 15:39:41 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 15:39:41 INFO  Root WebApplicationContext: initialization completed in 413 ms
+2021-07-14 15:39:41 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 15:39:41 INFO  HikariPool-2 - Starting...
+2021-07-14 15:39:41 INFO  HikariPool-2 - Start completed.
+2021-07-14 15:39:41 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 15:39:41 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 15:39:41 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 15:39:41 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 15:39:41 INFO  LiveReload server is running on port 35729
+2021-07-14 15:39:41 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 15:39:41 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 15:39:41 INFO  Started UniversitySpringApplication in 1.074 seconds (JVM running for 1256.463)
+2021-07-14 15:39:41 INFO  Condition evaluation unchanged
+2021-07-14 15:44:20 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 19992 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 15:44:20 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 15:44:20 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 15:44:20 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 15:44:20 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 15:44:20 INFO  Finished Spring Data repository scanning in 117 ms. Found 1 JPA repository interfaces.
+2021-07-14 15:44:21 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 15:44:21 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 15:44:21 INFO  Starting service [Tomcat]
+2021-07-14 15:44:21 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 15:44:21 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 15:44:21 INFO  Root WebApplicationContext: initialization completed in 1353 ms
+2021-07-14 15:44:21 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 15:44:21 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 15:44:21 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 15:44:21 INFO  HikariPool-1 - Starting...
+2021-07-14 15:44:21 INFO  HikariPool-1 - Start completed.
+2021-07-14 15:44:21 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 15:44:22 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 15:44:22 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 15:44:22 INFO  Autowired annotation is not supported on static fields: static main.service.apigroup.ApiGroupService universityspring.UniversitySpringApplication.apiGroup
+2021-07-14 15:44:22 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 15:44:23 INFO  LiveReload server is running on port 35729
+2021-07-14 15:44:23 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 15:44:23 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 15:44:23 INFO  Started UniversitySpringApplication in 3.56 seconds (JVM running for 4.005)
+2021-07-14 15:45:18 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 15:45:18 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 15:45:18 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 15:45:18 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 19992 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 15:45:18 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 15:45:19 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 15:45:19 INFO  Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interfaces.
+2021-07-14 15:45:19 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 15:45:19 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 15:45:19 INFO  Starting service [Tomcat]
+2021-07-14 15:45:19 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 15:45:19 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 15:45:19 INFO  Root WebApplicationContext: initialization completed in 415 ms
+2021-07-14 15:45:19 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 15:45:19 INFO  HikariPool-2 - Starting...
+2021-07-14 15:45:19 INFO  HikariPool-2 - Start completed.
+2021-07-14 15:45:19 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 15:45:19 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 15:45:19 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 15:45:19 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 15:45:19 INFO  LiveReload server is running on port 35729
+2021-07-14 15:45:19 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 15:45:20 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 15:45:20 INFO  Started UniversitySpringApplication in 1.059 seconds (JVM running for 60.645)
+2021-07-14 15:45:20 INFO  Condition evaluation unchanged
+2021-07-14 16:02:17 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-14 16:02:17 INFO  Initializing Servlet 'dispatcherServlet'
+2021-07-14 16:02:17 INFO  Completed initialization in 0 ms
+2021-07-14 16:03:50 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:03:50 INFO  HikariPool-2 - Shutdown initiated...
+2021-07-14 16:03:50 INFO  HikariPool-2 - Shutdown completed.
+2021-07-14 16:03:50 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 19992 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:03:50 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:03:50 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:03:50 INFO  Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
+2021-07-14 16:03:51 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:03:51 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:03:51 INFO  Starting service [Tomcat]
+2021-07-14 16:03:51 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:03:51 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:03:51 INFO  Root WebApplicationContext: initialization completed in 355 ms
+2021-07-14 16:03:51 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:03:51 INFO  HikariPool-3 - Starting...
+2021-07-14 16:03:51 INFO  HikariPool-3 - Start completed.
+2021-07-14 16:03:51 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:03:51 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:03:51 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:03:51 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 16:03:51 INFO  LiveReload server is running on port 35729
+2021-07-14 16:03:51 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:03:51 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 16:03:51 INFO  Started UniversitySpringApplication in 0.962 seconds (JVM running for 1172.254)
+2021-07-14 16:03:51 INFO  Condition evaluation unchanged
+2021-07-14 16:03:52 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 2724 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:03:52 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:03:52 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 16:03:52 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 16:03:53 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:03:53 INFO  Finished Spring Data repository scanning in 115 ms. Found 1 JPA repository interfaces.
+2021-07-14 16:03:53 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:03:53 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:03:53 INFO  Starting service [Tomcat]
+2021-07-14 16:03:53 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:03:54 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:03:54 INFO  Root WebApplicationContext: initialization completed in 1303 ms
+2021-07-14 16:03:54 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:03:54 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 16:03:54 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 16:03:54 INFO  HikariPool-1 - Starting...
+2021-07-14 16:03:54 INFO  HikariPool-1 - Start completed.
+2021-07-14 16:03:54 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:03:55 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:03:55 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:03:55 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 16:03:55 WARN  Unable to start LiveReload server
+2021-07-14 16:03:55 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:03:55 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-07-14 16:03:55 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:03:55 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 16:03:55 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 16:03:55 INFO  Pausing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:03:55 INFO  Stopping service [Tomcat]
+2021-07-14 16:03:55 INFO  Stopping ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:03:55 INFO  Destroying ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:03:55 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 16:03:55 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-07-14 16:04:33 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 18952 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:04:33 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:04:33 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 16:04:33 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 16:04:34 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:04:34 INFO  Finished Spring Data repository scanning in 120 ms. Found 1 JPA repository interfaces.
+2021-07-14 16:04:34 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:04:34 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:04:34 INFO  Starting service [Tomcat]
+2021-07-14 16:04:34 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:04:35 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:04:35 INFO  Root WebApplicationContext: initialization completed in 1310 ms
+2021-07-14 16:04:35 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:04:35 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 16:04:35 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 16:04:35 INFO  HikariPool-1 - Starting...
+2021-07-14 16:04:35 INFO  HikariPool-1 - Start completed.
+2021-07-14 16:04:35 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:04:36 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:04:36 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:04:36 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 16:04:36 WARN  Unable to start LiveReload server
+2021-07-14 16:04:36 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:04:36 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-07-14 16:04:36 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:04:36 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 16:04:36 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 16:04:36 INFO  Pausing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:04:36 INFO  Stopping service [Tomcat]
+2021-07-14 16:04:36 INFO  Stopping ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:04:36 INFO  Destroying ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:04:36 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 16:04:36 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-07-14 16:04:53 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:04:53 INFO  HikariPool-3 - Shutdown initiated...
+2021-07-14 16:04:53 INFO  HikariPool-3 - Shutdown completed.
+2021-07-14 16:04:53 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 19992 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:04:53 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:04:53 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:04:54 INFO  Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interfaces.
+2021-07-14 16:04:54 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:04:54 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:04:54 INFO  Starting service [Tomcat]
+2021-07-14 16:04:54 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:04:54 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:04:54 INFO  Root WebApplicationContext: initialization completed in 384 ms
+2021-07-14 16:04:54 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:04:54 INFO  HikariPool-4 - Starting...
+2021-07-14 16:04:54 INFO  HikariPool-4 - Start completed.
+2021-07-14 16:04:54 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:04:54 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:04:54 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:04:54 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 16:04:54 INFO  LiveReload server is running on port 35729
+2021-07-14 16:04:54 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:04:54 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 16:04:54 INFO  Started UniversitySpringApplication in 0.979 seconds (JVM running for 1235.334)
+2021-07-14 16:04:54 INFO  Condition evaluation unchanged
+2021-07-14 16:05:15 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 20136 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:05:15 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:05:15 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 16:05:15 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 16:05:16 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:05:16 INFO  Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interfaces.
+2021-07-14 16:05:16 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:05:16 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:05:16 INFO  Starting service [Tomcat]
+2021-07-14 16:05:16 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:05:17 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:05:17 INFO  Root WebApplicationContext: initialization completed in 1300 ms
+2021-07-14 16:05:17 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:05:17 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 16:05:17 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 16:05:17 INFO  HikariPool-1 - Starting...
+2021-07-14 16:05:17 INFO  HikariPool-1 - Start completed.
+2021-07-14 16:05:17 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:05:18 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:05:18 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:05:18 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 16:05:18 INFO  LiveReload server is running on port 35729
+2021-07-14 16:05:18 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:05:18 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 16:05:18 INFO  Started UniversitySpringApplication in 3.392 seconds (JVM running for 3.834)
+2021-07-14 16:05:48 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:05:48 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 16:05:48 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 16:05:48 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 20136 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:05:48 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:05:48 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:05:48 INFO  Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interfaces.
+2021-07-14 16:05:48 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:05:48 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:05:48 INFO  Starting service [Tomcat]
+2021-07-14 16:05:48 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:05:48 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:05:48 INFO  Root WebApplicationContext: initialization completed in 394 ms
+2021-07-14 16:05:48 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:05:48 INFO  HikariPool-2 - Starting...
+2021-07-14 16:05:48 INFO  HikariPool-2 - Start completed.
+2021-07-14 16:05:48 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:05:49 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:05:49 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:05:49 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 16:05:49 INFO  LiveReload server is running on port 35729
+2021-07-14 16:05:49 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:05:49 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 16:05:49 INFO  Started UniversitySpringApplication in 1.016 seconds (JVM running for 34.509)
+2021-07-14 16:05:49 INFO  Condition evaluation unchanged
+2021-07-14 16:06:09 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:06:09 INFO  HikariPool-2 - Shutdown initiated...
+2021-07-14 16:06:09 INFO  HikariPool-2 - Shutdown completed.
+2021-07-14 16:06:09 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 20136 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:06:09 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:06:10 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:06:10 INFO  Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2021-07-14 16:06:10 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:06:10 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:06:10 INFO  Starting service [Tomcat]
+2021-07-14 16:06:10 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:06:10 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:06:10 INFO  Root WebApplicationContext: initialization completed in 357 ms
+2021-07-14 16:06:10 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:06:10 INFO  HikariPool-3 - Starting...
+2021-07-14 16:06:10 INFO  HikariPool-3 - Start completed.
+2021-07-14 16:06:10 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:06:10 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:06:10 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:06:10 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'paramTransformer'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.apigroup.transformer.ApiGroupParamTransformerImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 16:06:10 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:06:10 INFO  HikariPool-3 - Shutdown initiated...
+2021-07-14 16:06:10 INFO  HikariPool-3 - Shutdown completed.
+2021-07-14 16:06:10 INFO  Stopping service [Tomcat]
+2021-07-14 16:06:10 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 16:06:10 ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'paramTransformer'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.apigroup.transformer.ApiGroupParamTransformerImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at universityspring.UniversitySpringApplication.main(UniversitySpringApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.apigroup.transformer.ApiGroupParamTransformerImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+2021-07-14 16:06:28 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 20136 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:06:28 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:06:29 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:06:29 INFO  Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interfaces.
+2021-07-14 16:06:29 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:06:29 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:06:29 INFO  Starting service [Tomcat]
+2021-07-14 16:06:29 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:06:29 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:06:29 INFO  Root WebApplicationContext: initialization completed in 359 ms
+2021-07-14 16:06:29 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:06:29 INFO  HikariPool-4 - Starting...
+2021-07-14 16:06:29 INFO  HikariPool-4 - Start completed.
+2021-07-14 16:06:29 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:06:29 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:06:29 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:06:29 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 16:06:29 INFO  LiveReload server is running on port 35729
+2021-07-14 16:06:29 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:06:29 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 16:06:29 INFO  Started UniversitySpringApplication in 0.943 seconds (JVM running for 74.878)
+2021-07-14 16:06:29 INFO  Condition evaluation unchanged
+2021-07-14 16:06:43 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 20584 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:06:43 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:06:43 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 16:06:43 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 16:06:43 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:06:43 INFO  Finished Spring Data repository scanning in 122 ms. Found 1 JPA repository interfaces.
+2021-07-14 16:06:44 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:06:44 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:06:44 INFO  Starting service [Tomcat]
+2021-07-14 16:06:44 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:06:44 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:06:44 INFO  Root WebApplicationContext: initialization completed in 1309 ms
+2021-07-14 16:06:44 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:06:44 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 16:06:44 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 16:06:44 INFO  HikariPool-1 - Starting...
+2021-07-14 16:06:45 INFO  HikariPool-1 - Start completed.
+2021-07-14 16:06:45 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:06:45 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:06:45 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:06:46 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 16:06:46 INFO  LiveReload server is running on port 35729
+2021-07-14 16:06:46 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:06:46 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 16:06:46 INFO  Started UniversitySpringApplication in 3.414 seconds (JVM running for 3.849)
+2021-07-14 16:08:26 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 16576 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:08:26 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:08:26 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 16:08:26 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 16:08:26 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:08:26 INFO  Finished Spring Data repository scanning in 114 ms. Found 1 JPA repository interfaces.
+2021-07-14 16:08:27 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:08:27 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:08:27 INFO  Starting service [Tomcat]
+2021-07-14 16:08:27 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:08:27 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:08:27 INFO  Root WebApplicationContext: initialization completed in 1295 ms
+2021-07-14 16:08:27 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:08:27 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 16:08:27 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 16:08:27 INFO  HikariPool-1 - Starting...
+2021-07-14 16:08:27 INFO  HikariPool-1 - Start completed.
+2021-07-14 16:08:27 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:08:28 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:08:28 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:08:28 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroup.dao.ApiGroupDaoImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 16:08:28 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:08:28 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 16:08:28 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 16:08:28 INFO  Stopping service [Tomcat]
+2021-07-14 16:08:28 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 16:08:28 ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroup.dao.ApiGroupDaoImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at universityspring.UniversitySpringApplication.main(UniversitySpringApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroup.dao.ApiGroupDaoImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+2021-07-14 16:09:04 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 21048 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:09:04 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:09:04 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 16:09:04 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 16:09:05 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:09:05 INFO  Finished Spring Data repository scanning in 120 ms. Found 1 JPA repository interfaces.
+2021-07-14 16:09:05 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:09:05 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:09:05 INFO  Starting service [Tomcat]
+2021-07-14 16:09:05 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:09:06 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:09:06 INFO  Root WebApplicationContext: initialization completed in 1297 ms
+2021-07-14 16:09:06 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:09:06 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 16:09:06 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 16:09:06 INFO  HikariPool-1 - Starting...
+2021-07-14 16:09:06 INFO  HikariPool-1 - Start completed.
+2021-07-14 16:09:06 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:09:07 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:09:07 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:09:07 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 16:09:07 INFO  LiveReload server is running on port 35729
+2021-07-14 16:09:07 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:09:07 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 16:09:07 INFO  Started UniversitySpringApplication in 3.445 seconds (JVM running for 3.872)
+2021-07-14 16:10:49 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 676 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:10:49 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:10:49 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 16:10:49 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 16:10:50 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:10:50 INFO  Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interfaces.
+2021-07-14 16:10:50 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:10:50 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:10:50 INFO  Starting service [Tomcat]
+2021-07-14 16:10:50 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:10:51 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:10:51 INFO  Root WebApplicationContext: initialization completed in 1277 ms
+2021-07-14 16:10:51 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:10:51 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 16:10:51 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 16:10:51 INFO  HikariPool-1 - Starting...
+2021-07-14 16:10:51 INFO  HikariPool-1 - Start completed.
+2021-07-14 16:10:51 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:10:52 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:10:52 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:10:52 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupUserProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroupuser.dao.ApiGroupUserDaoImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 16:10:52 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:10:52 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 16:10:52 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 16:10:52 INFO  Stopping service [Tomcat]
+2021-07-14 16:10:52 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 16:10:52 ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupUserProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroupuser.dao.ApiGroupUserDaoImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at universityspring.UniversitySpringApplication.main(UniversitySpringApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroupuser.dao.ApiGroupUserDaoImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+2021-07-14 16:13:26 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 15568 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:13:26 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:13:26 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 16:13:26 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 16:13:26 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:13:26 INFO  Finished Spring Data repository scanning in 116 ms. Found 1 JPA repository interfaces.
+2021-07-14 16:13:27 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:13:27 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:13:27 INFO  Starting service [Tomcat]
+2021-07-14 16:13:27 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:13:27 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:13:27 INFO  Root WebApplicationContext: initialization completed in 1300 ms
+2021-07-14 16:13:27 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:13:27 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 16:13:27 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 16:13:27 INFO  HikariPool-1 - Starting...
+2021-07-14 16:13:27 INFO  HikariPool-1 - Start completed.
+2021-07-14 16:13:27 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:13:28 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:13:28 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:13:28 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupUserProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupUserDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupUserRepoManagerImpl': Unsatisfied dependency expressed through field 'datasource'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.repository.CrudRepository<main.dataaccess.apigroupuser.dao.ApiGroupUser, java.lang.Long>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 16:13:28 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:13:28 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 16:13:28 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 16:13:28 INFO  Stopping service [Tomcat]
+2021-07-14 16:13:28 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 16:13:28 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field datasource in main.dataaccess.apigroupuser.repo.ApiGroupUserRepoManagerImpl required a bean of type 'org.springframework.data.repository.CrudRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.repository.CrudRepository' in your configuration.
+
+2021-07-14 16:20:09 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 4828 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:20:09 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:20:09 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 16:20:09 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 16:20:09 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:20:09 INFO  Finished Spring Data repository scanning in 125 ms. Found 2 JPA repository interfaces.
+2021-07-14 16:20:10 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:20:10 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:20:10 INFO  Starting service [Tomcat]
+2021-07-14 16:20:10 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:20:10 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:20:10 INFO  Root WebApplicationContext: initialization completed in 1347 ms
+2021-07-14 16:20:10 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:20:10 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 16:20:10 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 16:20:10 INFO  HikariPool-1 - Starting...
+2021-07-14 16:20:10 INFO  HikariPool-1 - Start completed.
+2021-07-14 16:20:10 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:20:11 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:20:11 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:20:11 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupUserProcessorImpl': Unsatisfied dependency expressed through field 'paramTransformer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupUserParamTransformerImpl': Unsatisfied dependency expressed through field 'validator'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupUserParamValidatorImpl': Unsatisfied dependency expressed through field 'apiUserDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apiuser.dao.ApiUserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 16:20:11 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:20:11 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 16:20:11 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 16:20:11 INFO  Stopping service [Tomcat]
+2021-07-14 16:20:11 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 16:20:11 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field apiUserDao in main.business.apigroupuser.validator.ApiGroupUserParamValidatorImpl required a bean of type 'main.dataaccess.apiuser.dao.ApiUserDao' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'main.dataaccess.apiuser.dao.ApiUserDao' in your configuration.
+
+2021-07-14 16:29:18 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 21236 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:29:18 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:29:18 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 16:29:18 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 16:29:18 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:29:19 INFO  Finished Spring Data repository scanning in 132 ms. Found 3 JPA repository interfaces.
+2021-07-14 16:29:19 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:29:19 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:29:19 INFO  Starting service [Tomcat]
+2021-07-14 16:29:19 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:29:19 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:29:19 INFO  Root WebApplicationContext: initialization completed in 1336 ms
+2021-07-14 16:29:19 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:29:19 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 16:29:20 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 16:29:20 INFO  HikariPool-1 - Starting...
+2021-07-14 16:29:20 INFO  HikariPool-1 - Start completed.
+2021-07-14 16:29:20 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:29:20 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:29:20 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:29:21 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseDtoProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type '?' available: expected single matching bean but found 3: apiGroupDaoImpl,apiGroupUserDaoImpl,apiUserDaoImpl
+2021-07-14 16:29:21 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:29:21 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 16:29:21 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 16:29:21 INFO  Stopping service [Tomcat]
+2021-07-14 16:29:21 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 16:29:21 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dao in main.business.common.BaseDtoProcessorImpl required a single bean, but 3 were found:
+	- apiGroupDaoImpl: defined in file [C:\work\java\university-spring\bin\main\main\dataaccess\apigroup\dao\ApiGroupDaoImpl.class]
+	- apiGroupUserDaoImpl: defined in file [C:\work\java\university-spring\bin\main\main\dataaccess\apigroupuser\dao\ApiGroupUserDaoImpl.class]
+	- apiUserDaoImpl: defined in file [C:\work\java\university-spring\bin\main\main\dataaccess\apiuser\dao\ApiUserDaoImpl.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+2021-07-14 16:46:15 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 21432 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:46:15 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:46:15 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 16:46:15 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 16:46:15 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:46:15 INFO  Finished Spring Data repository scanning in 131 ms. Found 3 JPA repository interfaces.
+2021-07-14 16:46:16 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:46:16 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:46:16 INFO  Starting service [Tomcat]
+2021-07-14 16:46:16 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:46:16 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:46:16 INFO  Root WebApplicationContext: initialization completed in 1334 ms
+2021-07-14 16:46:16 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:46:16 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 16:46:17 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 16:46:17 INFO  HikariPool-1 - Starting...
+2021-07-14 16:46:17 INFO  HikariPool-1 - Start completed.
+2021-07-14 16:46:17 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:46:17 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:46:17 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:46:18 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseDtoProcessorImpl': Unsatisfied dependency expressed through field 'paramTransformer'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type '?' available: expected single matching bean but found 3: apiGroupParamTransformerImpl,apiGroupUserParamTransformerImpl,apiUserParamTransformerImpl
+2021-07-14 16:46:18 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:46:18 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 16:46:18 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 16:46:18 INFO  Stopping service [Tomcat]
+2021-07-14 16:46:18 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 16:46:18 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field paramTransformer in main.business.common.BaseDtoProcessorImpl required a single bean, but 3 were found:
+	- apiGroupParamTransformerImpl: defined in file [C:\work\java\university-spring\bin\main\main\business\apigroup\transformer\ApiGroupParamTransformerImpl.class]
+	- apiGroupUserParamTransformerImpl: defined in file [C:\work\java\university-spring\bin\main\main\business\apigroupuser\transformer\ApiGroupUserParamTransformerImpl.class]
+	- apiUserParamTransformerImpl: defined in file [C:\work\java\university-spring\bin\main\main\business\apiuser\transformer\ApiUserParamTransformerImpl.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+2021-07-14 16:46:54 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 5288 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 16:46:54 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 16:46:54 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 16:46:54 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 16:46:55 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 16:46:55 INFO  Finished Spring Data repository scanning in 136 ms. Found 3 JPA repository interfaces.
+2021-07-14 16:46:55 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 16:46:55 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 16:46:55 INFO  Starting service [Tomcat]
+2021-07-14 16:46:55 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 16:46:55 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 16:46:55 INFO  Root WebApplicationContext: initialization completed in 1366 ms
+2021-07-14 16:46:56 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 16:46:56 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 16:46:56 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 16:46:56 INFO  HikariPool-1 - Starting...
+2021-07-14 16:46:56 INFO  HikariPool-1 - Start completed.
+2021-07-14 16:46:56 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 16:46:57 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 16:46:57 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:46:57 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseDtoProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type '?' available: expected single matching bean but found 3: apiGroupDaoImpl,apiGroupUserDaoImpl,apiUserDaoImpl
+2021-07-14 16:46:57 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 16:46:57 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 16:46:57 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 16:46:57 INFO  Stopping service [Tomcat]
+2021-07-14 16:46:57 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 16:46:57 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dao in main.business.common.BaseDtoProcessorImpl required a single bean, but 3 were found:
+	- apiGroupDaoImpl: defined in file [C:\work\java\university-spring\bin\main\main\dataaccess\apigroup\dao\ApiGroupDaoImpl.class]
+	- apiGroupUserDaoImpl: defined in file [C:\work\java\university-spring\bin\main\main\dataaccess\apigroupuser\dao\ApiGroupUserDaoImpl.class]
+	- apiUserDaoImpl: defined in file [C:\work\java\university-spring\bin\main\main\dataaccess\apiuser\dao\ApiUserDaoImpl.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+2021-07-14 17:28:23 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 21068 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 17:28:23 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 17:28:23 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 17:28:23 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 17:28:24 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 17:28:24 INFO  Finished Spring Data repository scanning in 129 ms. Found 3 JPA repository interfaces.
+2021-07-14 17:28:25 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 17:28:25 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 17:28:25 INFO  Starting service [Tomcat]
+2021-07-14 17:28:25 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 17:28:25 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 17:28:25 INFO  Root WebApplicationContext: initialization completed in 1455 ms
+2021-07-14 17:28:25 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 17:28:25 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 17:28:25 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 17:28:25 INFO  HikariPool-1 - Starting...
+2021-07-14 17:28:25 INFO  HikariPool-1 - Start completed.
+2021-07-14 17:28:25 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 17:28:26 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 17:28:26 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:28:26 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'departmentServiceImpl': Unsatisfied dependency expressed through field 'processor'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.department.processor.DepartmentProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 17:28:26 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:28:26 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 17:28:26 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 17:28:26 INFO  Stopping service [Tomcat]
+2021-07-14 17:28:26 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 17:28:26 ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'departmentServiceImpl': Unsatisfied dependency expressed through field 'processor'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.department.processor.DepartmentProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at universityspring.UniversitySpringApplication.main(UniversitySpringApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.department.processor.DepartmentProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+2021-07-14 17:28:55 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 19136 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 17:28:55 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 17:28:55 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 17:28:55 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 17:28:56 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 17:28:56 INFO  Finished Spring Data repository scanning in 135 ms. Found 3 JPA repository interfaces.
+2021-07-14 17:28:57 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 17:28:57 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 17:28:57 INFO  Starting service [Tomcat]
+2021-07-14 17:28:57 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 17:28:57 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 17:28:57 INFO  Root WebApplicationContext: initialization completed in 1406 ms
+2021-07-14 17:28:57 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 17:28:57 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 17:28:57 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 17:28:57 INFO  HikariPool-1 - Starting...
+2021-07-14 17:28:57 INFO  HikariPool-1 - Start completed.
+2021-07-14 17:28:57 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 17:28:58 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 17:28:58 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:28:58 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseDtoProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type '?' available: expected single matching bean but found 3: apiGroupDaoImpl,apiGroupUserDaoImpl,apiUserDaoImpl
+2021-07-14 17:28:58 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:28:58 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 17:28:58 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 17:28:58 INFO  Stopping service [Tomcat]
+2021-07-14 17:28:58 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 17:28:58 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dao in main.business.common.BaseDtoProcessorImpl required a single bean, but 3 were found:
+	- apiGroupDaoImpl: defined in file [C:\work\java\university-spring\bin\main\main\dataaccess\apigroup\dao\ApiGroupDaoImpl.class]
+	- apiGroupUserDaoImpl: defined in file [C:\work\java\university-spring\bin\main\main\dataaccess\apigroupuser\dao\ApiGroupUserDaoImpl.class]
+	- apiUserDaoImpl: defined in file [C:\work\java\university-spring\bin\main\main\dataaccess\apiuser\dao\ApiUserDaoImpl.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+2021-07-14 17:29:39 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 17728 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 17:29:39 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 17:29:39 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 17:29:39 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 17:29:40 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 17:29:40 INFO  Finished Spring Data repository scanning in 144 ms. Found 3 JPA repository interfaces.
+2021-07-14 17:29:40 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 17:29:40 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 17:29:40 INFO  Starting service [Tomcat]
+2021-07-14 17:29:40 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 17:29:40 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 17:29:40 INFO  Root WebApplicationContext: initialization completed in 1389 ms
+2021-07-14 17:29:41 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 17:29:41 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 17:29:41 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 17:29:41 INFO  HikariPool-1 - Starting...
+2021-07-14 17:29:41 INFO  HikariPool-1 - Start completed.
+2021-07-14 17:29:41 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 17:29:42 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 17:29:42 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:29:42 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'departmentServiceImpl': Unsatisfied dependency expressed through field 'processor'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.department.processor.DepartmentProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 17:29:42 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:29:42 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 17:29:42 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 17:29:42 INFO  Stopping service [Tomcat]
+2021-07-14 17:29:42 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 17:29:42 ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'departmentServiceImpl': Unsatisfied dependency expressed through field 'processor'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.department.processor.DepartmentProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at universityspring.UniversitySpringApplication.main(UniversitySpringApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.department.processor.DepartmentProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+2021-07-14 17:33:19 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 20152 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 17:33:19 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 17:33:19 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 17:33:19 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 17:33:20 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 17:33:20 INFO  Finished Spring Data repository scanning in 139 ms. Found 3 JPA repository interfaces.
+2021-07-14 17:33:20 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 17:33:20 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 17:33:20 INFO  Starting service [Tomcat]
+2021-07-14 17:33:20 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 17:33:21 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 17:33:21 INFO  Root WebApplicationContext: initialization completed in 1401 ms
+2021-07-14 17:33:21 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 17:33:21 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 17:33:21 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 17:33:21 INFO  HikariPool-1 - Starting...
+2021-07-14 17:33:21 INFO  HikariPool-1 - Start completed.
+2021-07-14 17:33:21 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 17:33:22 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 17:33:22 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:33:22 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'departmentProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.department.dao.DepartmentDaoImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 17:33:22 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:33:22 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 17:33:22 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 17:33:22 INFO  Stopping service [Tomcat]
+2021-07-14 17:33:22 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 17:33:22 ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'departmentProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.department.dao.DepartmentDaoImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at universityspring.UniversitySpringApplication.main(UniversitySpringApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.department.dao.DepartmentDaoImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+2021-07-14 17:42:22 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 11512 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 17:42:22 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 17:42:22 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 17:42:22 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 17:42:23 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 17:42:23 INFO  Finished Spring Data repository scanning in 133 ms. Found 4 JPA repository interfaces.
+2021-07-14 17:42:23 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 17:42:23 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 17:42:23 INFO  Starting service [Tomcat]
+2021-07-14 17:42:23 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 17:42:23 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 17:42:23 INFO  Root WebApplicationContext: initialization completed in 1345 ms
+2021-07-14 17:42:24 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 17:42:24 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 17:42:24 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 17:42:24 INFO  HikariPool-1 - Starting...
+2021-07-14 17:42:24 INFO  HikariPool-1 - Start completed.
+2021-07-14 17:42:24 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 17:42:25 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 17:42:25 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:42:25 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'departmentProcessorImpl': Unsatisfied dependency expressed through field 'paramTransformer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'departmentParamTransformerImpl': Unsatisfied dependency expressed through field 'validator'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'departmentParamValidatorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.faculty.dao.FacultyDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 17:42:25 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:42:25 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 17:42:25 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 17:42:25 INFO  Stopping service [Tomcat]
+2021-07-14 17:42:25 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 17:42:25 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dao in main.business.department.validator.DepartmentParamValidatorImpl required a bean of type 'main.dataaccess.faculty.dao.FacultyDao' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'main.dataaccess.faculty.dao.FacultyDao' in your configuration.
+
+2021-07-14 17:51:40 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 12404 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 17:51:40 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 17:51:40 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 17:51:40 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 17:51:40 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 17:51:40 INFO  Finished Spring Data repository scanning in 134 ms. Found 6 JPA repository interfaces.
+2021-07-14 17:51:41 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 17:51:41 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 17:51:41 INFO  Starting service [Tomcat]
+2021-07-14 17:51:41 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 17:51:41 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 17:51:41 INFO  Root WebApplicationContext: initialization completed in 1347 ms
+2021-07-14 17:51:41 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 17:51:41 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 17:51:41 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 17:51:41 INFO  HikariPool-1 - Starting...
+2021-07-14 17:51:41 INFO  HikariPool-1 - Start completed.
+2021-07-14 17:51:41 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 17:51:42 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 17:51:42 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:51:42 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'facultyDisciplineServiceImpl': Unsatisfied dependency expressed through field 'processor'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.facultydiscipline.processor.FacultyDisciplineProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 17:51:42 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:51:42 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 17:51:42 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 17:51:42 INFO  Stopping service [Tomcat]
+2021-07-14 17:51:42 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 17:51:42 ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'facultyDisciplineServiceImpl': Unsatisfied dependency expressed through field 'processor'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.facultydiscipline.processor.FacultyDisciplineProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at universityspring.UniversitySpringApplication.main(UniversitySpringApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.facultydiscipline.processor.FacultyDisciplineProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+2021-07-14 17:56:33 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 14804 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 17:56:33 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 17:56:33 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 17:56:33 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 17:56:34 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 17:56:34 INFO  Finished Spring Data repository scanning in 145 ms. Found 7 JPA repository interfaces.
+2021-07-14 17:56:34 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 17:56:34 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 17:56:34 INFO  Starting service [Tomcat]
+2021-07-14 17:56:34 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 17:56:35 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 17:56:35 INFO  Root WebApplicationContext: initialization completed in 1403 ms
+2021-07-14 17:56:35 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 17:56:35 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 17:56:35 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 17:56:35 INFO  HikariPool-1 - Starting...
+2021-07-14 17:56:35 INFO  HikariPool-1 - Start completed.
+2021-07-14 17:56:35 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 17:56:36 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 17:56:36 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:56:36 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lecturerServiceImpl': Unsatisfied dependency expressed through field 'processor'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.lecturer.processor.LecturerProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 17:56:36 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 17:56:36 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 17:56:36 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 17:56:36 INFO  Stopping service [Tomcat]
+2021-07-14 17:56:36 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 17:56:36 ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lecturerServiceImpl': Unsatisfied dependency expressed through field 'processor'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.lecturer.processor.LecturerProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at universityspring.UniversitySpringApplication.main(UniversitySpringApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.lecturer.processor.LecturerProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+2021-07-14 18:01:44 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 5544 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 18:01:44 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 18:01:44 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 18:01:44 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 18:01:44 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 18:01:45 INFO  Finished Spring Data repository scanning in 138 ms. Found 8 JPA repository interfaces.
+2021-07-14 18:01:45 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 18:01:45 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 18:01:45 INFO  Starting service [Tomcat]
+2021-07-14 18:01:45 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 18:01:45 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 18:01:45 INFO  Root WebApplicationContext: initialization completed in 1351 ms
+2021-07-14 18:01:46 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 18:01:46 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 18:01:46 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 18:01:46 INFO  HikariPool-1 - Starting...
+2021-07-14 18:01:46 INFO  HikariPool-1 - Start completed.
+2021-07-14 18:01:46 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 18:01:47 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 18:01:47 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 18:01:47 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'specialityServiceImpl': Unsatisfied dependency expressed through field 'processor'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.speciality.processor.SpecialityProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 18:01:47 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 18:01:47 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 18:01:47 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 18:01:47 INFO  Stopping service [Tomcat]
+2021-07-14 18:01:47 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 18:01:47 ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'specialityServiceImpl': Unsatisfied dependency expressed through field 'processor'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.speciality.processor.SpecialityProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at universityspring.UniversitySpringApplication.main(UniversitySpringApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.business.speciality.processor.SpecialityProcessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+2021-07-14 18:04:56 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 8816 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 18:04:56 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 18:04:56 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 18:04:56 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 18:04:56 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 18:04:56 INFO  Finished Spring Data repository scanning in 154 ms. Found 9 JPA repository interfaces.
+2021-07-14 18:04:57 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 18:04:57 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 18:04:57 INFO  Starting service [Tomcat]
+2021-07-14 18:04:57 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 18:04:57 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 18:04:57 INFO  Root WebApplicationContext: initialization completed in 1419 ms
+2021-07-14 18:04:57 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 18:04:57 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 18:04:57 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 18:04:58 INFO  HikariPool-1 - Starting...
+2021-07-14 18:04:58 INFO  HikariPool-1 - Start completed.
+2021-07-14 18:04:58 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 18:04:58 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 18:04:58 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 18:04:59 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 18:04:59 INFO  LiveReload server is running on port 35729
+2021-07-14 18:04:59 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 18:04:59 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 18:04:59 INFO  Started UniversitySpringApplication in 3.666 seconds (JVM running for 4.096)
+2021-07-14 18:06:56 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-14 18:06:56 INFO  Initializing Servlet 'dispatcherServlet'
+2021-07-14 18:06:56 INFO  Completed initialization in 1 ms
+2021-07-14 18:17:01 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 18:17:01 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 18:17:01 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 18:17:01 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 8816 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 18:17:01 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 18:17:01 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 18:17:02 INFO  Finished Spring Data repository scanning in 117 ms. Found 9 JPA repository interfaces.
+2021-07-14 18:17:02 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 18:17:02 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 18:17:02 INFO  Starting service [Tomcat]
+2021-07-14 18:17:02 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 18:17:02 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 18:17:02 INFO  Root WebApplicationContext: initialization completed in 485 ms
+2021-07-14 18:17:02 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 18:17:02 INFO  HikariPool-2 - Starting...
+2021-07-14 18:17:02 INFO  HikariPool-2 - Start completed.
+2021-07-14 18:17:02 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 18:17:02 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 18:17:02 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 18:17:02 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 18:17:02 INFO  LiveReload server is running on port 35729
+2021-07-14 18:17:02 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 18:17:02 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 18:17:02 INFO  Started UniversitySpringApplication in 1.211 seconds (JVM running for 727.321)
+2021-07-14 18:17:02 INFO  Condition evaluation unchanged
+2021-07-14 18:17:14 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-14 18:17:14 INFO  Initializing Servlet 'dispatcherServlet'
+2021-07-14 18:17:14 INFO  Completed initialization in 0 ms
+2021-07-14 18:17:30 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 21052 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 18:17:30 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 18:17:30 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 18:17:30 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 18:17:30 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 18:17:30 INFO  Finished Spring Data repository scanning in 150 ms. Found 9 JPA repository interfaces.
+2021-07-14 18:17:31 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 18:17:31 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 18:17:31 INFO  Starting service [Tomcat]
+2021-07-14 18:17:31 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 18:17:31 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 18:17:31 INFO  Root WebApplicationContext: initialization completed in 1389 ms
+2021-07-14 18:17:31 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 18:17:31 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 18:17:31 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 18:17:32 INFO  HikariPool-1 - Starting...
+2021-07-14 18:17:32 INFO  HikariPool-1 - Start completed.
+2021-07-14 18:17:32 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 18:17:32 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 18:17:32 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 18:17:33 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 18:17:33 INFO  LiveReload server is running on port 35729
+2021-07-14 18:17:33 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 18:17:33 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 18:17:33 INFO  Started UniversitySpringApplication in 3.606 seconds (JVM running for 4.046)
+2021-07-14 18:17:50 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-14 18:17:50 INFO  Initializing Servlet 'dispatcherServlet'
+2021-07-14 18:17:50 INFO  Completed initialization in 0 ms
+2021-07-14 18:18:04 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 18:18:04 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 18:18:04 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 18:18:04 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 21052 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 18:18:04 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 18:18:04 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 18:18:04 INFO  Finished Spring Data repository scanning in 114 ms. Found 9 JPA repository interfaces.
+2021-07-14 18:18:04 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 18:18:04 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 18:18:04 INFO  Starting service [Tomcat]
+2021-07-14 18:18:04 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 18:18:04 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 18:18:04 INFO  Root WebApplicationContext: initialization completed in 502 ms
+2021-07-14 18:18:04 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 18:18:04 INFO  HikariPool-2 - Starting...
+2021-07-14 18:18:04 INFO  HikariPool-2 - Start completed.
+2021-07-14 18:18:04 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 18:18:05 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 18:18:05 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 18:18:05 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-14 18:18:05 INFO  LiveReload server is running on port 35729
+2021-07-14 18:18:05 INFO  Starting ProtocolHandler ["http-nio-8080"]
+2021-07-14 18:18:05 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-14 18:18:05 INFO  Started UniversitySpringApplication in 1.223 seconds (JVM running for 35.968)
+2021-07-14 18:18:05 INFO  Condition evaluation unchanged

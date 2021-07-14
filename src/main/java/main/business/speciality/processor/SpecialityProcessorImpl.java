@@ -1,5 +1,7 @@
 package main.business.speciality.processor;
 
+import org.springframework.stereotype.Component;
+
 import main.business.common.BaseProcessorImpl;
 import main.business.speciality.transformer.SpecialityParamTransformerImpl;
 import main.business.speciality.transformer.SpecialityResultTransformerImpl;
@@ -8,6 +10,7 @@ import main.dataaccess.speciality.dao.SpecialityDaoImpl;
 import main.service.speciality.SpecialityParam;
 import main.service.speciality.SpecialityResult;
 
+@Component
 public class SpecialityProcessorImpl 
 extends BaseProcessorImpl<
 SpecialityParam,

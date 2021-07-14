@@ -1,5 +1,7 @@
 package main.business.department.processor;
 
+import org.springframework.stereotype.Component;
+
 import main.business.common.BaseProcessorImpl;
 import main.business.department.transformer.DepartmentParamTransformerImpl;
 import main.business.department.transformer.DepartmentResultTransformerImpl;
@@ -8,6 +10,7 @@ import main.dataaccess.department.dao.DepartmentDaoImpl;
 import main.service.department.DepartmentParam;
 import main.service.department.DepartmentResult;
 
+@Component
 public class DepartmentProcessorImpl
 		extends BaseProcessorImpl<
 		DepartmentParam,

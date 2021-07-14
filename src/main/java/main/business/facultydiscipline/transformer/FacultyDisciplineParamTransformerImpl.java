@@ -1,6 +1,7 @@
 package main.business.facultydiscipline.transformer;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import main.business.common.BaseDtoParamTransformerImpl;
 import main.business.facultydiscipline.validator.FacultyDisciplineParamValidatorImpl;
@@ -11,6 +12,7 @@ import main.dataaccess.faculty.dao.FacultyDao;
 import main.dataaccess.facultydiscipline.dao.FacultyDiscipline;
 import main.service.facultydiscipline.FacultyDisciplineParam;
 
+@Component
 public class FacultyDisciplineParamTransformerImpl 
 extends BaseDtoParamTransformerImpl<FacultyDisciplineParam, FacultyDiscipline, FacultyDisciplineParamValidatorImpl>
 implements FacultyDisciplineParamTransformer {
@@ -36,6 +38,7 @@ implements FacultyDisciplineParamTransformer {
 		return entity;
 	}
 
+	@Override
 	protected void setProperties(FacultyDiscipline entity, FacultyDisciplineParam param) {
 		Discipline discipline = disciplineDao.get(param.getDisciplineId());
 		Faculty faculty = facultyDao.get(param.getFacultyId());

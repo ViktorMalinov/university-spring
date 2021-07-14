@@ -2,17 +2,19 @@ package main.dataaccess.apigroupuser.repo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import main.common.Utils;
 import main.dataaccess.apigroupuser.dao.ApiGroupUser;
 import main.dataaccess.common.PersistentRepoManagerImpl;
 
+@Repository
 public class ApiGroupUserRepoManagerImpl extends PersistentRepoManagerImpl<ApiGroupUser> implements ApiGroupUserRepoManager {
 
 	//private static Map<Long, ApiGroupUser> datasource = new HashMap<Long, ApiGroupUser>();
 
 	@Autowired
-	private CrudRepository<ApiGroupUser, Long> datasource;
+	private ApiGroupUserCrudRepository datasource;
 	
 	
 	@Override

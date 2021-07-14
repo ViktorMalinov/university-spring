@@ -1,6 +1,7 @@
 package main.business.facultydiscipline.validator;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import main.business.common.BaseParamValidatorImpl;
 import main.common.Constants;
@@ -12,6 +13,7 @@ import main.dataaccess.faculty.dao.Faculty;
 import main.dataaccess.faculty.dao.FacultyDao;
 import main.service.facultydiscipline.FacultyDisciplineParam;
 
+@Component
 public class FacultyDisciplineParamValidatorImpl extends BaseParamValidatorImpl <FacultyDisciplineParam> implements FacultyDisciplineParamValidator{
 
 	@Autowired

@@ -1,5 +1,7 @@
 package main.business.apigroupuser.transformer;
 
+import org.springframework.stereotype.Component;
+
 import main.business.common.BaseDtoResultTransformerImpl;
 import main.common.Constants;
 import main.common.ErrCode;
@@ -7,16 +9,19 @@ import main.common.UniversityBaseException;
 import main.dataaccess.apigroupuser.dao.ApiGroupUser;
 import main.service.apigroupuser.ApiGroupUserResult;
 
+@Component
 public class ApiGroupUserResultTransformerImpl 
 		extends BaseDtoResultTransformerImpl<ApiGroupUserResult,ApiGroupUser> 
 		implements ApiGroupUserResultTransformer {
 
 
+	@Override
 	public ApiGroupUserResult getNewResult() {
 		ApiGroupUserResult result = new ApiGroupUserResult();
 		return result;
 	}
 	
+	@Override
 	protected void setProperties(ApiGroupUser entity, ApiGroupUserResult result) throws Exception {
 		
 		if (entity.getApiGroup() == null) {

@@ -1,5 +1,7 @@
 package main.business.discipline.processor;
 
+import org.springframework.stereotype.Component;
+
 import main.business.common.BaseProcessorImpl;
 import main.business.discipline.transformer.DisciplineParamTransformerImpl;
 import main.business.discipline.transformer.DisciplineResultTransformerImpl;
@@ -8,6 +10,7 @@ import main.dataaccess.discipline.dao.DisciplineDaoImpl;
 import main.service.discipline.DisciplineParam;
 import main.service.discipline.DisciplineResult;
 
+@Component
 public class DisciplineProcessorImpl 
 		extends BaseProcessorImpl<
 		DisciplineParam,

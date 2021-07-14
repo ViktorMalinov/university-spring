@@ -1,6 +1,7 @@
 package main.business.lecturer.transformer;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import main.business.common.BaseParamTransformerImpl;
 import main.business.lecturer.validator.LecturerParamValidatorImpl;
@@ -12,6 +13,7 @@ import main.dataaccess.department.dao.DepartmentDaoImpl;
 import main.dataaccess.lecturer.dao.Lecturer;
 import main.service.lecturer.LecturerParam;
 
+@Component
 public class LecturerParamTransformerImpl 
 extends BaseParamTransformerImpl<LecturerParam, Lecturer, LecturerParamValidatorImpl>
 implements LecturerParamTransformer {
@@ -33,6 +35,7 @@ implements LecturerParamTransformer {
 		return entity;
 	}
 
+	@Override
 	protected void setProperties(Lecturer entity, LecturerParam param) {
 		Department department = departmentDao.get(param.getDepartmentId());
 		ApiUser apiUser = apiUserDao.get(param.getApiUserId());

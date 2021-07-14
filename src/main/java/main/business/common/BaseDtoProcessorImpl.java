@@ -1,13 +1,12 @@
 package main.business.common;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 
 import main.dataaccess.common.BaseDao;
 import main.dataaccess.common.Persistent;
 import main.service.common.BaseDto;
 
-@Controller
+
 public class BaseDtoProcessorImpl<
 		IN  extends BaseDto,
 		OUT extends BaseDto,

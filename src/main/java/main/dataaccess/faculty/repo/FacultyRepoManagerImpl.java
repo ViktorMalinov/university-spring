@@ -2,17 +2,19 @@ package main.dataaccess.faculty.repo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import main.common.Utils;
 import main.dataaccess.common.PersistentRepoManagerImpl;
 import main.dataaccess.faculty.dao.Faculty;
 
+@Repository
 public class FacultyRepoManagerImpl extends PersistentRepoManagerImpl<Faculty> implements FacultyRepoManager {
 
 	//private static Map<Long, Faculty> datasource = new HashMap<Long, Faculty>();
 	
 	@Autowired
-	private CrudRepository<Faculty, Long> datasource;
+	private FacultyCrudRepository datasource;
 	
 
 	@Override

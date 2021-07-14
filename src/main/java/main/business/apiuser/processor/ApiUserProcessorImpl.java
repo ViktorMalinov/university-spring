@@ -1,5 +1,7 @@
 package main.business.apiuser.processor;
 
+import org.springframework.stereotype.Component;
+
 import main.business.apiuser.transformer.ApiUserParamTransformerImpl;
 import main.business.apiuser.transformer.ApiUserResultTransformerImpl;
 import main.business.common.BaseProcessorImpl;
@@ -8,6 +10,7 @@ import main.dataaccess.apiuser.dao.ApiUserDaoImpl;
 import main.service.apiuser.ApiUserParam;
 import main.service.apiuser.ApiUserResult;
 
+@Component
 public class ApiUserProcessorImpl 
 		extends BaseProcessorImpl<
 		ApiUserParam,

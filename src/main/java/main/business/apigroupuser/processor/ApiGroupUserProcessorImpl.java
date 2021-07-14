@@ -1,5 +1,7 @@
 package main.business.apigroupuser.processor;
 
+import org.springframework.stereotype.Component;
+
 import main.business.apigroupuser.transformer.ApiGroupUserParamTransformerImpl;
 import main.business.apigroupuser.transformer.ApiGroupUserResultTransformerImpl;
 import main.business.common.BaseDtoProcessorImpl;
@@ -8,6 +10,7 @@ import main.dataaccess.apigroupuser.dao.ApiGroupUserDaoImpl;
 import main.service.apigroupuser.ApiGroupUserParam;
 import main.service.apigroupuser.ApiGroupUserResult;
 
+@Component
 public class ApiGroupUserProcessorImpl 
 		extends BaseDtoProcessorImpl<
 		ApiGroupUserParam,

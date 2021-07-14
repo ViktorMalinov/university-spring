@@ -1,6 +1,7 @@
 package main.business.apigroupuser.validator;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import main.business.common.BaseParamValidatorImpl;
 import main.common.Constants;
@@ -12,7 +13,10 @@ import main.dataaccess.apiuser.dao.ApiUser;
 import main.dataaccess.apiuser.dao.ApiUserDao;
 import main.service.apigroupuser.ApiGroupUserParam;
 
-public class ApiGroupUserParamValidatorImpl extends BaseParamValidatorImpl <ApiGroupUserParam> implements ApiGroupUserParamValidator{
+@Component
+public class ApiGroupUserParamValidatorImpl 
+	extends BaseParamValidatorImpl <ApiGroupUserParam> 
+	implements ApiGroupUserParamValidator{
 
 	@Autowired
 	ApiGroupDao	apiGroupDao; // = new ApiGroupDaoImpl();
