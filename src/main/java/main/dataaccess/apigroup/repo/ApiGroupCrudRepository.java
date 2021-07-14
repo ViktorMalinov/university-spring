@@ -8,4 +8,5 @@ import main.dataaccess.apigroup.dao.ApiGroup;
 @Repository
 public interface ApiGroupCrudRepository extends CrudRepository<ApiGroup, Long> {
 
+
 }

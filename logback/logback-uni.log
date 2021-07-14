@@ -8177,3 +8177,588 @@ Action:
 
 Consider defining a bean of type 'org.springframework.data.repository.CrudRepository' in your configuration.
 
+2021-07-13 17:38:29 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 18968 (C:\work\java\university-spring\build\classes\java\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-13 17:38:29 INFO  No active profile set, falling back to default profiles: default
+2021-07-13 17:38:29 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-13 17:38:29 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-13 17:38:30 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-13 17:38:30 INFO  Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-07-13 17:38:30 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-13 17:38:30 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-13 17:38:30 INFO  Starting service [Tomcat]
+2021-07-13 17:38:30 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-13 17:38:30 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-13 17:38:30 INFO  Root WebApplicationContext: initialization completed in 1230 ms
+2021-07-13 17:38:30 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-13 17:38:30 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-13 17:38:31 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-13 17:38:31 INFO  HikariPool-1 - Starting...
+2021-07-13 17:38:31 INFO  HikariPool-1 - Start completed.
+2021-07-13 17:38:31 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-13 17:38:32 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-13 17:38:32 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 17:38:32 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupRepoManagerImpl': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.repository.CrudRepository<main.dataaccess.apigroup.dao.ApiGroup, java.lang.Long>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-13 17:38:32 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 17:38:32 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-13 17:38:32 INFO  HikariPool-1 - Shutdown completed.
+2021-07-13 17:38:32 INFO  Stopping service [Tomcat]
+2021-07-13 17:38:32 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-13 17:38:32 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field repo in main.dataaccess.common.BaseRepoManagerImpl required a bean of type 'org.springframework.data.repository.CrudRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.repository.CrudRepository' in your configuration.
+
+2021-07-14 11:36:59 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 4656 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 11:36:59 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 11:36:59 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 11:36:59 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 11:36:59 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 11:36:59 INFO  Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-07-14 11:37:00 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 11:37:00 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 11:37:00 INFO  Starting service [Tomcat]
+2021-07-14 11:37:00 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 11:37:00 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 11:37:00 INFO  Root WebApplicationContext: initialization completed in 1181 ms
+2021-07-14 11:37:00 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 11:37:00 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 11:37:00 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 11:37:00 INFO  HikariPool-1 - Starting...
+2021-07-14 11:37:00 INFO  HikariPool-1 - Start completed.
+2021-07-14 11:37:00 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 11:37:01 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 11:37:01 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 11:37:01 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupRepoManagerImpl': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.repository.CrudRepository<main.dataaccess.apigroup.dao.ApiGroup, java.lang.Long>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 11:37:01 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 11:37:01 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 11:37:01 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 11:37:01 INFO  Stopping service [Tomcat]
+2021-07-14 11:37:01 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 11:37:01 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field repo in main.dataaccess.common.BaseRepoManagerImpl required a bean of type 'org.springframework.data.repository.CrudRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.repository.CrudRepository' in your configuration.
+
+2021-07-14 11:47:24 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 19764 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 11:47:24 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 11:47:24 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 11:47:24 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 11:47:24 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 11:47:24 INFO  Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-07-14 11:47:25 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 11:47:25 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 11:47:25 INFO  Starting service [Tomcat]
+2021-07-14 11:47:25 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 11:47:25 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 11:47:25 INFO  Root WebApplicationContext: initialization completed in 1211 ms
+2021-07-14 11:47:25 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 11:47:25 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 11:47:25 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 11:47:25 INFO  HikariPool-1 - Starting...
+2021-07-14 11:47:25 INFO  HikariPool-1 - Start completed.
+2021-07-14 11:47:25 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 11:47:26 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 11:47:26 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 11:47:26 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupRepoManagerImpl': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.repository.CrudRepository<main.dataaccess.apigroup.dao.ApiGroup, java.lang.Long>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 11:47:26 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 11:47:26 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 11:47:26 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 11:47:26 INFO  Stopping service [Tomcat]
+2021-07-14 11:47:26 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 11:47:26 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field repo in main.dataaccess.common.BaseRepoManagerImpl required a bean of type 'org.springframework.data.repository.CrudRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.repository.CrudRepository' in your configuration.
+
+2021-07-14 11:48:49 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 17932 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 11:48:49 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 11:48:49 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 11:48:49 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 11:48:49 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 11:48:49 INFO  Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-07-14 11:48:50 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 11:48:50 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 11:48:50 INFO  Starting service [Tomcat]
+2021-07-14 11:48:50 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 11:48:50 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 11:48:50 INFO  Root WebApplicationContext: initialization completed in 1184 ms
+2021-07-14 11:48:50 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 11:48:50 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 11:48:50 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 11:48:50 INFO  HikariPool-1 - Starting...
+2021-07-14 11:48:50 INFO  HikariPool-1 - Start completed.
+2021-07-14 11:48:50 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 11:48:51 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 11:48:51 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 11:48:51 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupRepoManagerImpl': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.repository.CrudRepository<main.dataaccess.apigroup.dao.ApiGroup, java.lang.Long>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 11:48:51 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 11:48:51 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 11:48:51 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 11:48:51 INFO  Stopping service [Tomcat]
+2021-07-14 11:48:51 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 11:48:51 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field repo in main.dataaccess.common.BaseRepoManagerImpl required a bean of type 'org.springframework.data.repository.CrudRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.repository.CrudRepository' in your configuration.
+
+2021-07-14 11:54:52 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 11024 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 11:54:52 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 11:54:52 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 11:54:52 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 11:54:53 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 11:54:53 INFO  Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-07-14 11:54:53 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 11:54:53 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 11:54:53 INFO  Starting service [Tomcat]
+2021-07-14 11:54:53 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 11:54:53 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 11:54:53 INFO  Root WebApplicationContext: initialization completed in 1187 ms
+2021-07-14 11:54:54 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 11:54:54 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 11:54:54 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 11:54:54 INFO  HikariPool-1 - Starting...
+2021-07-14 11:54:54 INFO  HikariPool-1 - Start completed.
+2021-07-14 11:54:54 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 11:54:55 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 11:54:55 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 11:54:55 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupRepoManagerImpl': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.repository.CrudRepository<main.dataaccess.apigroup.dao.ApiGroup, java.lang.Long>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 11:54:55 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 11:54:55 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 11:54:55 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 11:54:55 INFO  Stopping service [Tomcat]
+2021-07-14 11:54:55 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 11:54:55 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field repo in main.dataaccess.common.BaseRepoManagerImpl required a bean of type 'org.springframework.data.repository.CrudRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.repository.CrudRepository' in your configuration.
+
+2021-07-14 11:55:55 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 20272 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 11:55:55 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 11:55:55 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 11:55:55 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 11:55:56 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 11:55:56 INFO  Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-07-14 11:55:56 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 11:55:56 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 11:55:56 INFO  Starting service [Tomcat]
+2021-07-14 11:55:56 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 11:55:56 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 11:55:56 INFO  Root WebApplicationContext: initialization completed in 1172 ms
+2021-07-14 11:55:56 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 11:55:56 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 11:55:56 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 11:55:57 INFO  HikariPool-1 - Starting...
+2021-07-14 11:55:57 INFO  HikariPool-1 - Start completed.
+2021-07-14 11:55:57 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 11:55:57 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 11:55:57 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 11:55:57 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupRepoManagerImpl': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.repository.CrudRepository<main.dataaccess.apigroup.dao.ApiGroup, java.lang.Long>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 11:55:57 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 11:55:57 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 11:55:57 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 11:55:57 INFO  Stopping service [Tomcat]
+2021-07-14 11:55:57 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 11:55:57 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field repo in main.dataaccess.common.BaseRepoManagerImpl required a bean of type 'org.springframework.data.repository.CrudRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.repository.CrudRepository' in your configuration.
+
+2021-07-14 12:21:04 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 20340 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 12:21:04 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 12:21:04 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 12:21:04 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 12:21:05 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 12:21:05 INFO  Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-07-14 12:21:05 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 12:21:05 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 12:21:05 INFO  Starting service [Tomcat]
+2021-07-14 12:21:05 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 12:21:05 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 12:21:05 INFO  Root WebApplicationContext: initialization completed in 1183 ms
+2021-07-14 12:21:06 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 12:21:06 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 12:21:06 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 12:21:06 INFO  HikariPool-1 - Starting...
+2021-07-14 12:21:06 INFO  HikariPool-1 - Start completed.
+2021-07-14 12:21:06 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 12:21:07 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 12:21:07 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 12:21:07 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupRepoManagerImpl': Unsatisfied dependency expressed through field 'datasource'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.repository.CrudRepository<main.dataaccess.apigroup.dao.ApiGroup, java.lang.Long>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 12:21:07 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 12:21:07 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 12:21:07 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 12:21:07 INFO  Stopping service [Tomcat]
+2021-07-14 12:21:07 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 12:21:07 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field datasource in main.dataaccess.apigroup.repo.ApiGroupRepoManagerImpl required a bean of type 'org.springframework.data.repository.CrudRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.repository.CrudRepository' in your configuration.
+
+2021-07-14 12:22:56 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 11008 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 12:22:56 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 12:22:56 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 12:22:56 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 12:22:56 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 12:22:56 INFO  Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-07-14 12:22:57 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 12:22:57 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 12:22:57 INFO  Starting service [Tomcat]
+2021-07-14 12:22:57 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 12:22:57 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 12:22:57 INFO  Root WebApplicationContext: initialization completed in 1177 ms
+2021-07-14 12:22:57 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 12:22:57 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 12:22:57 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 12:22:57 INFO  HikariPool-1 - Starting...
+2021-07-14 12:22:57 INFO  HikariPool-1 - Start completed.
+2021-07-14 12:22:57 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 12:22:58 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 12:22:58 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 12:22:58 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupRepoManagerImpl': Unsatisfied dependency expressed through field 'datasource'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroup.repo.ApiGroupCrudRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 12:22:58 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 12:22:58 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 12:22:58 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 12:22:58 INFO  Stopping service [Tomcat]
+2021-07-14 12:22:58 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 12:22:58 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field datasource in main.dataaccess.apigroup.repo.ApiGroupRepoManagerImpl required a bean of type 'main.dataaccess.apigroup.repo.ApiGroupCrudRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'main.dataaccess.apigroup.repo.ApiGroupCrudRepository' in your configuration.
+
+2021-07-14 12:23:58 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 10540 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 12:23:58 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 12:23:58 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 12:23:58 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 12:23:58 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 12:23:58 INFO  Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-07-14 12:23:59 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 12:23:59 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 12:23:59 INFO  Starting service [Tomcat]
+2021-07-14 12:23:59 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 12:23:59 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 12:23:59 INFO  Root WebApplicationContext: initialization completed in 1194 ms
+2021-07-14 12:23:59 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 12:23:59 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 12:23:59 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 12:23:59 INFO  HikariPool-1 - Starting...
+2021-07-14 12:23:59 INFO  HikariPool-1 - Start completed.
+2021-07-14 12:23:59 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 12:24:00 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 12:24:00 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 12:24:00 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupRepoManagerImpl': Unsatisfied dependency expressed through field 'datasource'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.repository.CrudRepository<main.dataaccess.apigroup.dao.ApiGroup, java.lang.Long>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 12:24:00 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 12:24:00 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 12:24:00 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 12:24:00 INFO  Stopping service [Tomcat]
+2021-07-14 12:24:00 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 12:24:00 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field datasource in main.dataaccess.apigroup.repo.ApiGroupRepoManagerImpl required a bean of type 'org.springframework.data.repository.CrudRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.repository.CrudRepository' in your configuration.
+
+2021-07-14 12:25:08 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 9720 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 12:25:08 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 12:25:08 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 12:25:08 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 12:25:09 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 12:25:09 INFO  Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-07-14 12:25:10 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 12:25:10 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 12:25:10 INFO  Starting service [Tomcat]
+2021-07-14 12:25:10 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 12:25:10 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 12:25:10 INFO  Root WebApplicationContext: initialization completed in 1147 ms
+2021-07-14 12:25:10 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 12:25:10 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 12:25:10 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 12:25:10 INFO  HikariPool-1 - Starting...
+2021-07-14 12:25:10 INFO  HikariPool-1 - Start completed.
+2021-07-14 12:25:10 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 12:25:11 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 12:25:11 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 12:25:11 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroup.repo.ApiGroupRepoManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 12:25:11 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 12:25:11 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 12:25:11 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 12:25:11 INFO  Stopping service [Tomcat]
+2021-07-14 12:25:11 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 12:25:11 ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroup.repo.ApiGroupRepoManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at universityspring.UniversitySpringApplication.main(UniversitySpringApplication.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroup.repo.ApiGroupRepoManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroup.repo.ApiGroupRepoManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 39 common frames omitted
+2021-07-14 12:26:28 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 19628 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 12:26:28 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 12:26:28 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 12:26:28 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 12:26:28 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 12:26:28 INFO  Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2021-07-14 12:26:29 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 12:26:29 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 12:26:29 INFO  Starting service [Tomcat]
+2021-07-14 12:26:29 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 12:26:29 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 12:26:29 INFO  Root WebApplicationContext: initialization completed in 1186 ms
+2021-07-14 12:26:29 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 12:26:29 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 12:26:29 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 12:26:29 INFO  HikariPool-1 - Starting...
+2021-07-14 12:26:29 INFO  HikariPool-1 - Start completed.
+2021-07-14 12:26:29 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 12:26:30 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 12:26:30 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 12:26:30 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupRepoManagerImpl': Unsatisfied dependency expressed through field 'datasource'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.repository.CrudRepository<main.dataaccess.apigroup.dao.ApiGroup, java.lang.Long>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 12:26:30 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 12:26:30 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 12:26:30 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 12:26:30 INFO  Stopping service [Tomcat]
+2021-07-14 12:26:30 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 12:26:30 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field datasource in main.dataaccess.apigroup.repo.ApiGroupRepoManagerImpl required a bean of type 'org.springframework.data.repository.CrudRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.repository.CrudRepository' in your configuration.
+
+2021-07-14 14:48:05 INFO  Starting UniversitySpringApplication using Java 16 on PC2021-1 with PID 19272 (C:\work\java\university-spring\bin\main started by Viktor Malinov in C:\work\java\university-spring)
+2021-07-14 14:48:05 INFO  No active profile set, falling back to default profiles: default
+2021-07-14 14:48:05 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 14:48:05 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-14 14:48:05 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-14 14:48:05 INFO  Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-07-14 14:48:06 INFO  Tomcat initialized with port(s): 8080 (http)
+2021-07-14 14:48:06 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-14 14:48:06 INFO  Starting service [Tomcat]
+2021-07-14 14:48:06 INFO  Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 14:48:06 INFO  Initializing Spring embedded WebApplicationContext
+2021-07-14 14:48:06 INFO  Root WebApplicationContext: initialization completed in 1234 ms
+2021-07-14 14:48:06 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-14 14:48:06 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-14 14:48:06 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-14 14:48:06 INFO  HikariPool-1 - Starting...
+2021-07-14 14:48:06 INFO  HikariPool-1 - Start completed.
+2021-07-14 14:48:06 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-07-14 14:48:07 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-14 14:48:07 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 14:48:07 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupProcessorImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupDaoImpl': Unsatisfied dependency expressed through field 'repoManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiGroupRepoManagerImpl': Unsatisfied dependency expressed through field 'datasource'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'main.dataaccess.apigroup.repo.ApiGroupCrudRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-14 14:48:07 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 14:48:07 INFO  HikariPool-1 - Shutdown initiated...
+2021-07-14 14:48:07 INFO  HikariPool-1 - Shutdown completed.
+2021-07-14 14:48:07 INFO  Stopping service [Tomcat]
+2021-07-14 14:48:07 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 14:48:07 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field datasource in main.dataaccess.apigroup.repo.ApiGroupRepoManagerImpl required a bean of type 'main.dataaccess.apigroup.repo.ApiGroupCrudRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'main.dataaccess.apigroup.repo.ApiGroupCrudRepository' in your configuration.
+

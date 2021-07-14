@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 
 
@@ -18,8 +17,10 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 
 	protected abstract CrudRepository<ENT, PK> getDataSource();
 	
-	@Autowired
-	protected CrudRepository<ENT, PK> repo;
+	
+	//@Autowired
+	//public CrudRepository<ENT, PK> repo;
+	
 	
 	
 	@Override
@@ -27,7 +28,7 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 		
 		ENT result;
 		
-		result = repo.save(entity);
+		result = getDataSource().save(entity);
 		
 		logger.info("ISERTING  ---> " + entity.toString());
 
@@ -39,7 +40,7 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 	public ENT select(PK id) {
 		ENT entity = null;
 		
-		entity = repo.findById(id).orElse(entity);
+		entity = getDataSource().findById(id).orElse(entity);
 
 		logger.info("SELECTING ---> ID: " + id.toString() + ", object: " + entity.toString());
 
@@ -49,7 +50,7 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 	@Override
 	public void update(ENT entity) {
 		
-		repo.save(entity);		
+		getDataSource().save(entity);		
 		
 		logger.info("UPDATING  --->  object: " + entity.toString());
 		
@@ -57,7 +58,7 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 
 	@Override
 	public void delete(PK id) {
-		repo.deleteById(id);
+		getDataSource().deleteById(id);
 		
 		logger.info("DELETING  ---> ID: " + id.toString() );
 	}
@@ -66,7 +67,7 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 	public List<ENT> selectAll() {
 		List<ENT> result = new ArrayList<ENT>();
 		
-		Iterable<ENT> entity = repo.findAll();
+		Iterable<ENT> entity = getDataSource().findAll();
 		
 		entity.forEach(result::add);
 		

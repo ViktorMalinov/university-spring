@@ -1,5 +1,6 @@
 package main.dataaccess.apigroup.repo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -9,15 +10,15 @@ import main.dataaccess.common.PersistentRepoManagerImpl;
 @Repository
 public class ApiGroupRepoManagerImpl extends PersistentRepoManagerImpl<ApiGroup> implements ApiGroupRepoManager {
 
-	/*
+	
 	@Autowired
-	private CrudRepository<ApiGroup, Long> datasource;
-	*/
+	private ApiGroupCrudRepository datasource;
+	
 	
 	
 	@Override
 	public CrudRepository<ApiGroup, Long> getDataSource() {
-		return null;
+		return datasource;
 	}
 	
 	/*
