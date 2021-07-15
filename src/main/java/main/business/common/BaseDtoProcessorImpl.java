@@ -1,5 +1,8 @@
 package main.business.common;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import main.dataaccess.common.BaseDao;
@@ -61,6 +64,20 @@ public class BaseDtoProcessorImpl<
 	@Override
 	public void delete(PK id) {
 		dao.delete(id);
+	}
+
+	@Override
+	public List<OUT> getAll() throws Exception {
+		List<ENT> daoResult = dao.selectAll();
+		List<OUT> result = new ArrayList<OUT>();;
+		
+		//daoResult.forEach( e -> result.add(resultTransformer.transform(e)) );
+		
+		for (ENT e : daoResult) {
+			result.add(resultTransformer.transform(e));
+		}
+		
+		return result;
 	}
 	
 	

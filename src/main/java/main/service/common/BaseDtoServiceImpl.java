@@ -1,5 +1,7 @@
 package main.service.common;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import main.business.common.BaseProcessor;
@@ -40,6 +42,12 @@ public class BaseDtoServiceImpl<
 	@Override
 	public void delete(PK id) {
 		processor.delete(id);
+	}
+
+
+	@Override
+	public List<OUT> getAll() throws Exception {
+		return processor.getAll();
 	}	
 
 }
