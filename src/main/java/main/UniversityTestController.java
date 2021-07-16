@@ -30,7 +30,7 @@ public class UniversityTestController {
 	public String getTestMessage() throws Exception  {
 		//System.out.print("Test Test");
 		apiGroupTest();
-		ApiUserTest();
+		//ApiUserTest();
 		
 		
 		return "Test Test";
@@ -93,7 +93,9 @@ public class UniversityTestController {
 		param.setCode(21L);
 		param.setName("Group 2a");
 		param.setDisplayName("Display Name AG - 2a");
+		
 		apiGroupService.update(param);
+		
 		res =  apiGroupService.get(2L);
 		System.out.printf("id: %d, code: %d, name: %s, description: %s , displayName: %s%n", res.getId(), res.getCode(), res.getName(), res.getDescription(), res.getDisplayName());
 		

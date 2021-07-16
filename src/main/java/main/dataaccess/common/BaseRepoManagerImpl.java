@@ -2,6 +2,7 @@ package main.dataaccess.common;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -49,10 +50,15 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 
 	@Override
 	public void update(ENT entity) {
+		Optional<ENT> entityToUpdate = getDataSource().findById(getPk(entity));  
 		
-		getDataSource().save(entity);		
+		logger.info("UPDATING  --->  object: " + entity.toString() + "  AND THE ID IS: ---> "+ getPk(entity));
 		
-		logger.info("UPDATING  --->  object: " + entity.toString());
+		//getDataSource().save(entity);
+		
+		entityToUpdate.ifPresent(ent -> getDataSource().save(entity) );
+		
+		logger.info("UPDATING  --->  object: " + entity.toString() + "  AND THE ID IS: ---> "+ getPk(entity));
 		
 	}
 

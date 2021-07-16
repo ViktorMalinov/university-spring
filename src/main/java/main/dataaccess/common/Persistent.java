@@ -22,6 +22,9 @@ import com.sun.istack.NotNull;
 @OptimisticLocking(type = OptimisticLockType.VERSION)
 public class Persistent {
 
+	private static final long serialVersionUID = 6857410091575760475L;
+	
+	
 	@Id()
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
