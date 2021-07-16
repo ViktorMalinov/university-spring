@@ -19,9 +19,6 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
 	protected abstract CrudRepository<ENT, PK> getDataSource();
 	
 	
-	//@Autowired
-	//public CrudRepository<ENT, PK> repo;
-	
 	
 	
 	@Override

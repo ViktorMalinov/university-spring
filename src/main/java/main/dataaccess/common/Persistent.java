@@ -1,5 +1,6 @@
 package main.dataaccess.common;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 import javax.persistence.Access;
@@ -11,16 +12,13 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Version;
 
-import org.hibernate.annotations.OptimisticLockType;
-import org.hibernate.annotations.OptimisticLocking;
-
 import com.sun.istack.NotNull;
 
 
 @Access(AccessType.FIELD)
 @MappedSuperclass
-@OptimisticLocking(type = OptimisticLockType.VERSION)
-public class Persistent {
+//@OptimisticLocking(type = OptimisticLockType.VERSION)
+public class Persistent implements Serializable {
 
 	private static final long serialVersionUID = 6857410091575760475L;
 	
@@ -34,14 +32,23 @@ public class Persistent {
 	@Version
 	@NotNull
 	@Column(name = "version", columnDefinition = "BIGINT(20) NOT NULL DEFAULT 0")
-	protected Long version;
+	protected Long version; // = 1L;
 	
 	
 	@Column(name = "modification_time", columnDefinition = "TIMESTAMP")
 	protected LocalDateTime modificationTime;	
 	
 	  
-	  
+	/*  
+	public Long getVersion() {
+		return version;
+	}
+
+	public void setVersion(Long version) {
+		this.version = version;
+	}
+	*/
+
 	public Long getId() {
 		return this.id;
 	}

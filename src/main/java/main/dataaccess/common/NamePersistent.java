@@ -14,6 +14,8 @@ import org.hibernate.annotations.OptimisticLocking;
 @OptimisticLocking(type = OptimisticLockType.VERSION)
 public class NamePersistent extends Persistent {
 
+	private static final long serialVersionUID = 6857410091575760475L;
+	
 	@Column(name = "code")
 	protected Long code;
 	

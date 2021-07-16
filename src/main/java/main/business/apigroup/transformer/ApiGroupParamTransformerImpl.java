@@ -27,7 +27,8 @@ public class ApiGroupParamTransformerImpl
 
 	@Override
 	protected void setProperties(ApiGroup entity, ApiGroupParam param) {
-		entity.setDisplayName(param.getDisplayName());	
+		entity.setDisplayName(param.getDisplayName());
+		//entity.setVersion(1L);
 	}
 
 }

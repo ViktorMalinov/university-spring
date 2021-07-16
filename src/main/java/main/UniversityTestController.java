@@ -95,6 +95,7 @@ public class UniversityTestController {
 		param.setDisplayName("Display Name AG - 2a");
 		
 		apiGroupService.update(param);
+		//apiGroupService.update(param);
 		
 		res =  apiGroupService.get(2L);
 		System.out.printf("id: %d, code: %d, name: %s, description: %s , displayName: %s%n", res.getId(), res.getCode(), res.getName(), res.getDescription(), res.getDisplayName());

@@ -10,7 +10,8 @@ public abstract class PersistentRepoManagerImpl<ENT extends Persistent> extends 
 		return entity.getId();
 	}
 
-
+	
+	
 	/*
 	@Override
 	public void setPk(ENT entity) {
