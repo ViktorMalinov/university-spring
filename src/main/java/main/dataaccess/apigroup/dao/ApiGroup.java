@@ -12,7 +12,7 @@ import main.dataaccess.common.NamePersistent;
 @Table(name = "api_group")
 public class ApiGroup extends NamePersistent {
 
-	private static final long serialVersionUID = 1L;
+	//private static final long serialVersionUID = 1L;
 	
 	@Column(name = "display_name", length = 50)
 	private String displayName;
