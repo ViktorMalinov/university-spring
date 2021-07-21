@@ -10,10 +10,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
+import lombok.*;
 import org.hibernate.annotations.OptimisticLockType;
 import org.hibernate.annotations.OptimisticLocking;
 
 
+
+@Data
 @Access(AccessType.FIELD)
 @MappedSuperclass
 @OptimisticLocking(type = OptimisticLockType.VERSION)
@@ -27,6 +30,10 @@ public class Persistent {
 	@Column(name = "id")
 	protected Long id;
 
+	@Column(name = "modification_time", columnDefinition = "TIMESTAMP")
+	protected LocalDateTime modificationTime;
+
+
 	/*
 	@Version
 	@NotNull
@@ -34,11 +41,7 @@ public class Persistent {
 	protected Long version = 1L; // = 1L;
 	*/
 	
-	
-	@Column(name = "modification_time", columnDefinition = "TIMESTAMP")
-	protected LocalDateTime modificationTime;	
-	
-	  
+
 	/*  
 	public Long getVersion() {
 		return version;
@@ -49,13 +52,4 @@ public class Persistent {
 	}
 	*/
 
-	public Long getId() {
-		return this.id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-	
-	
 }

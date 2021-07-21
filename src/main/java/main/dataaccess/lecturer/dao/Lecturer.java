@@ -6,10 +6,13 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import lombok.*;
 import main.dataaccess.apiuser.dao.ApiUser;
 import main.dataaccess.common.NamePersistent;
 import main.dataaccess.department.dao.Department;
 
+@Data
+@EqualsAndHashCode(callSuper=false)
 @Entity
 @Table(name = "lecturer")
 public class Lecturer extends NamePersistent {
@@ -25,28 +28,6 @@ public class Lecturer extends NamePersistent {
 	@ManyToOne
 	@JoinColumn(name = "department_id", nullable = false)
 	private Department department;
-	
-	
-	
-	public String getFamilyName() {
-		return familyName;
-	}
-	public void setFamilyName(String familyName) {
-		this.familyName = familyName;
-	}
-	public ApiUser getApiUser() {
-		return apiUser;
-	}
-	public void setApiUser(ApiUser apiUser) {
-		this.apiUser = apiUser;
-	}
-	public Department getDepartment() {
-		return department;
-	}
-	public void setDepartment(Department department) {
-		this.department = department;
-	}
 
 
-	
 }

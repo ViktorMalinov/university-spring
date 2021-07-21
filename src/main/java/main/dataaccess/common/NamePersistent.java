@@ -5,10 +5,13 @@ import javax.persistence.AccessType;
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
+import lombok.*;
 import org.hibernate.annotations.OptimisticLockType;
 import org.hibernate.annotations.OptimisticLocking;
 
 
+@Data
+@EqualsAndHashCode(callSuper=false)
 @Access(AccessType.FIELD)
 @MappedSuperclass
 @OptimisticLocking(type = OptimisticLockType.VERSION)
@@ -25,29 +28,6 @@ public class NamePersistent extends Persistent {
 	
 	@Column(name = "description", length=255)
 	protected String description;
-	
-	
-	
-	
-	public Long getCode() {
-		return code;
-	}
-	public void setCode(Long code) {
-		this.code = code;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
-	
 
 
 }
