@@ -3,6 +3,7 @@ package main;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -82,10 +83,28 @@ public class UniversityTestController {
 		System.out.print(e.getMessage());
 		return e.getMessage();
 	}
-	    
-		
+
 		return "Test Test";
 		
+	}
+
+	@GetMapping("username")
+	public String currentUserName(Authentication authentication) {
+		return "Username: " + authentication.getName();
+	}
+
+
+	@GetMapping("/username/{userName}")
+	public ApiUserResult getAPiUserByName(@PathVariable(value = "userName") String userName) throws Exception {
+		ApiUserResult res = new ApiUserResult();
+		List<ApiUserResult> result = apiUser.getAll();
+
+		res = result.stream()
+				.filter(user -> userName.equals(user.getUsername()))
+				.findFirst().orElse(res);
+
+		return res;
+
 	}
 
 	@GetMapping("apigroupgetall")
@@ -102,6 +121,8 @@ public class UniversityTestController {
 		
 	}
 
+
+
 // --------------------- TEST FUNCTIONS ---------------------------------------	
 	
 	public void apiGroupTest() throws Exception {
@@ -113,7 +134,7 @@ public class UniversityTestController {
 		//param.setId(id);
 
 		param.setCode(10L);
-		param.setName("Group 1");
+		param.setName("ADMIN");
 		param.setDescription("First group ever... :)");
 		param.setDisplayName("Display Name AG");
 		
@@ -122,13 +143,13 @@ public class UniversityTestController {
 		apiGroupService.create(param);
 
 		param.setCode(20L);
-		param.setName("Group 2");
+		param.setName("USERS");
 		param.setDescription("Secong group ever... :)");
 		param.setDisplayName("Display Name AG - 2");
 		apiGroupService.create(param);
 
 		param.setCode(30L);
-		param.setName("Group 3");
+		param.setName("USERS2");
 		param.setDescription("Last group ever... :)");
 		param.setDisplayName("Display Name AG-3");
 		apiGroupService.create(param);
@@ -145,7 +166,7 @@ public class UniversityTestController {
 		param.setId(res.getId());
 		param.setDescription("Secong group ever... :) - a");
 		param.setCode(21L);
-		param.setName("Group 2a");
+		param.setName("USERS");
 		param.setDisplayName("Display Name AG - 2a");
 		
 		apiGroupService.update(param);
@@ -172,21 +193,21 @@ public class UniversityTestController {
 		// create
 		//param.setId(id);
 		param.setCode(10L);
-		param.setDisplayName("Group 1");
+		param.setDisplayName("Admin user");
 		param.setDescription("First group ever... :)");
-		param.setName("name - 1");
-		param.setUsername("Username - 1");
-		param.setEmail("e-mail - 1");
-		param.setPassword("************");
+		param.setName("Atanas");
+		param.setUsername("admin");
+		param.setEmail("admin@xaos.com");
+		param.setPassword("admin123");
 		apiUser.create(param);
 
 		param.setCode(20L);
-		param.setDisplayName("Group 2");
+		param.setDisplayName("Simple user");
 		param.setDescription("Secong group ever... :)");
-		param.setName("name - 2");
-		param.setUsername("Username - 2");
-		param.setEmail("e-mail - 2");
-		param.setPassword("################");
+		param.setName("Ivan");
+		param.setUsername("user");
+		param.setEmail("user@xaos.com");
+		param.setPassword("user123");
 		apiUser.create(param);
 
 		
@@ -201,7 +222,7 @@ public class UniversityTestController {
 		param.setId(res.getId());
 		param.setDescription(res.getDescription());
 		param.setCode(21L);
-		param.setDisplayName("Group 2a");
+		param.setDisplayName("Simple user - modified");
 		apiUser.update(param);
 		res =  apiUser.get(2L);
 		System.out.printf("id: %d, code: %d, name: %s, description: %s%n", res.getId(), res.getCode(), res.getDisplayName(), res.getDescription());
@@ -233,13 +254,6 @@ public class UniversityTestController {
 		res =  apiGroupUser.get(2L);
 		System.out.printf("id: %d, Groupid: %d, user id: %d%n", res.getId(), res.getApiGroupId(), res.getApiUserId());
 
-
-		// update
-		
-		// delete
-		//apiGroupUser.delete(2L); // deleting group 
-		//System.out.println("id: 2 was deleted...");
-		
 		System.out.println();
 		System.out.println();
 	}

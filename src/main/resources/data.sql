@@ -1,0 +1,2 @@
+INSERT INTO api_user (id, modification_time, code, description, name, display_name, email, password, username) VALUES(1, '2021-08-10 14:28:08.000', 10, 'First group ever... :)', 'Atanas', 'Admin user', 'admin@xaos.com', 'admin123', 'admin');
+INSERT INTO api_user (id, modification_time, code, description, name, display_name, email, password, username) VALUES(2, '2021-08-10 14:28:08.000', 21, 'Secong group ever... :)', 'Ivan', 'Simple user - modified', 'user@xaos.com', 'user123', 'user');
