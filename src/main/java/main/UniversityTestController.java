@@ -1,6 +1,8 @@
 package main;
 
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -120,6 +122,38 @@ public class UniversityTestController {
 		return result;
 		
 	}
+
+	@GetMapping("/ug/{id}")
+	public Stream<ApiGroupResult> getRolesForUser(@PathVariable(value = "id") String sid) throws Exception {
+		Long id = Long.valueOf(sid);
+
+		List<ApiGroupUserResult>  grpUser = apiGroupUser.getAll();
+		List<ApiGroupResult>  groups = apiGroupService.getAll();
+
+		Stream<ApiGroupUserResult> fltUserGroups = grpUser.stream().filter(gu -> gu.getApiUserId().equals(id));
+
+		Stream<ApiGroupResult> fltGroups = groups.stream().filter(
+						g -> fltUserGroups.   anyMatch(gu -> gu.getApiGroupId() == g.getId())
+		);
+
+		/*
+		AtomicReference<String> roles = new AtomicReference<>("");
+		List<ApiGroupUserResult>  grpUser = apiGroupUser.getAll();
+		List<ApiGroupResult>  groups = apiGroupService.getAll();
+
+		Stream<ApiGroupUserResult> fltUserGroups = grpUser.stream().filter(gu -> gu.getApiUserId().equals(id));
+		Stream<ApiGroupResult> fltGroups = groups.stream().filter(
+				g -> fltUserGroups.anyMatch(gu -> gu.getApiGroupId().equals(g.getId()))
+		);
+
+		fltGroups.forEach( g -> roles.set(roles.get() + g.getName()) );
+
+		*/
+
+		return fltGroups;
+		//return sid; //roles.get();
+	}
+
 
 
 
