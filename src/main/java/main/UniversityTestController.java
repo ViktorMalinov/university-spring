@@ -2,6 +2,7 @@ package main;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -92,6 +93,7 @@ public class UniversityTestController {
 
 	@GetMapping("username")
 	public String currentUserName(Authentication authentication) {
+
 		return "Username: " + authentication.getName();
 	}
 
@@ -124,37 +126,40 @@ public class UniversityTestController {
 	}
 
 	@GetMapping("/ug/{id}")
-	public Stream<ApiGroupResult> getRolesForUser(@PathVariable(value = "id") String sid) throws Exception {
+	public String getRolesForUser(@PathVariable(value = "id") String sid) throws Exception {
 		Long id = Long.valueOf(sid);
+		String roles = "";
 
 		List<ApiGroupUserResult>  grpUser = apiGroupUser.getAll();
 		List<ApiGroupResult>  groups = apiGroupService.getAll();
 
 		Stream<ApiGroupUserResult> fltUserGroups = grpUser.stream().filter(gu -> gu.getApiUserId().equals(id));
+		List<ApiGroupUserResult> fltUserGroupsList = fltUserGroups.collect(Collectors.toList());
 
 		Stream<ApiGroupResult> fltGroups = groups.stream().filter(
-						g -> fltUserGroups.   anyMatch(gu -> gu.getApiGroupId() == g.getId())
+						g -> fltUserGroupsList.stream().anyMatch(gu -> gu.getApiGroupId().equals(g.getId()))
+						//g -> checkGroup(fltUserGroupsList,g.getId())
+						//g -> g.getId() == 2 || g.getId() == 1
 		);
 
-		/*
-		AtomicReference<String> roles = new AtomicReference<>("");
-		List<ApiGroupUserResult>  grpUser = apiGroupUser.getAll();
-		List<ApiGroupResult>  groups = apiGroupService.getAll();
+		List<ApiGroupResult> fltGroupsList = fltGroups.collect(Collectors.toList());
 
-		Stream<ApiGroupUserResult> fltUserGroups = grpUser.stream().filter(gu -> gu.getApiUserId().equals(id));
-		Stream<ApiGroupResult> fltGroups = groups.stream().filter(
-				g -> fltUserGroups.anyMatch(gu -> gu.getApiGroupId().equals(g.getId()))
-		);
+		for (ApiGroupResult apiG : fltGroupsList)
+		{
+			if (roles.equals(""))
+				roles = apiG.getName();
+			else
+				roles = roles + "," +apiG.getName();
+		}
 
-		fltGroups.forEach( g -> roles.set(roles.get() + g.getName()) );
-
-		*/
-
-		return fltGroups;
-		//return sid; //roles.get();
+		return roles;
 	}
 
-
+	private boolean checkGroup(List<ApiGroupUserResult> fltUserGroups, Long id) {
+		boolean result = true;
+		result = fltUserGroups.stream().anyMatch(gu -> gu.getApiGroupId() == id);
+		return result;
+	}
 
 
 // --------------------- TEST FUNCTIONS ---------------------------------------	

@@ -18,6 +18,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Configuration
@@ -40,40 +41,43 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 try {
                     auth
                             .inMemoryAuthentication()
-                            //.withUser(u.getUsername()).password(passwordEncoder().encode(u.getPassword())).roles(getRolesForUser(u.getId()));
-                            .withUser(u.getUsername()).password(passwordEncoder().encode(u.getPassword())).roles("ADMIN");
+                            .withUser(u.getUsername()).password(passwordEncoder().encode(u.getPassword())).roles(getRolesForUser(u.getId()));
+                            //.withUser(u.getUsername()).password(passwordEncoder().encode(u.getPassword())).roles("ADMIN");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
         );
 
-        /*
-        auth
-                .inMemoryAuthentication()
-                .withUser("admin").password(passwordEncoder().encode("admin111")).roles("ADMIN");
-
-
-        auth
-                .inMemoryAuthentication()
-                .withUser("user").password(passwordEncoder().encode("user111")).roles("USER");
-
-         */
     }
 
     private String getRolesForUser(Long id) throws Exception {
-        AtomicReference<String> roles = new AtomicReference<>("");
+        String roles = "";
+
         List<ApiGroupUserResult>  grpUser = apiGroupUser.getAll();
         List<ApiGroupResult>  groups = apiGroupService.getAll();
 
         Stream<ApiGroupUserResult> fltUserGroups = grpUser.stream().filter(gu -> gu.getApiUserId().equals(id));
+        List<ApiGroupUserResult> fltUserGroupsList = fltUserGroups.collect(Collectors.toList());
+
         Stream<ApiGroupResult> fltGroups = groups.stream().filter(
-                    g -> fltUserGroups.anyMatch(gu -> gu.getApiGroupId().equals(g.getId()))
-                );
+                g -> fltUserGroupsList.stream().anyMatch(gu -> gu.getApiGroupId().equals(g.getId()))
 
-        fltGroups.forEach( g -> roles.set(roles.get() + g.getName()) );
+                //g -> checkGroup(fltUserGroupsList,g.getId())
+                //g -> g.getId() == 2 || g.getId() == 1
+        );
 
-        return roles.get();
+        List<ApiGroupResult> fltGroupsList = fltGroups.collect(Collectors.toList());
+
+        for (ApiGroupResult apiG : fltGroupsList)
+        {
+            if (roles.equals(""))
+                roles = apiG.getName();
+            else
+                roles = roles + "," + apiG.getName();
+        }
+
+        return roles;
     }
 
     @Override
