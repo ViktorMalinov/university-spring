@@ -1,11 +1,14 @@
 package main;
 
 import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import main.business.apigroup.processor.ApiGroupProcessor;
+import main.business.apigroupuser.processor.ApiGroupUserProcessor;
+import main.business.apiuser.processor.ApiUserProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -63,10 +66,17 @@ public class UniversityTestController {
 	private LecturerService Lecturer;
 	@Autowired
 	private SpecialityService Speciality;
+
+	@Autowired
+	ApiUserProcessor apiUserProc;
+	@Autowired
+	ApiGroupProcessor apiGroupProc;
+	@Autowired
+	ApiGroupUserProcessor apiGroupUserProc;
+
 	
 	
-	
-	
+	/*
 	@GetMapping("test")
 	public String getTestMessage() throws Exception  {
 		//System.out.print("Test Test");
@@ -91,6 +101,8 @@ public class UniversityTestController {
 		
 	}
 
+	*/
+
 	@GetMapping("username")
 	public String currentUserName(Authentication authentication) {
 
@@ -101,7 +113,8 @@ public class UniversityTestController {
 	@GetMapping("/username/{userName}")
 	public ApiUserResult getAPiUserByName(@PathVariable(value = "userName") String userName) throws Exception {
 		ApiUserResult res = new ApiUserResult();
-		List<ApiUserResult> result = apiUser.getAll();
+
+		List<ApiUserResult> result =  apiUserProc.getAll();
 
 		res = result.stream()
 				.filter(user -> userName.equals(user.getUsername()))
@@ -113,14 +126,14 @@ public class UniversityTestController {
 
 	@GetMapping("apigroupgetall")
 	public List<ApiGroupResult> getAllArticles() throws Exception {
-		List<ApiGroupResult> list = apiGroupService.getAll();
+		List<ApiGroupResult> list =  apiGroupProc.getAll();
 		return list;
 		
 	}
 	
 	@GetMapping("/apigroupbyid/{id}")
 	public ApiGroupResult getAPiGroupById(@PathVariable(value = "id") String id) throws Exception {
-		ApiGroupResult result = apiGroupService.get((Long.valueOf(id)));
+		ApiGroupResult result = apiGroupProc.get((Long.valueOf(id)));
 		return result;
 		
 	}
@@ -130,8 +143,8 @@ public class UniversityTestController {
 		Long id = Long.valueOf(sid);
 		String roles = "";
 
-		List<ApiGroupUserResult>  grpUser = apiGroupUser.getAll();
-		List<ApiGroupResult>  groups = apiGroupService.getAll();
+		List<ApiGroupUserResult>  grpUser =  apiGroupUserProc.getAll();
+		List<ApiGroupResult>  groups =  apiGroupProc.getAll();
 
 		Stream<ApiGroupUserResult> fltUserGroups = grpUser.stream().filter(gu -> gu.getApiUserId().equals(id));
 		List<ApiGroupUserResult> fltUserGroupsList = fltUserGroups.collect(Collectors.toList());
@@ -161,7 +174,7 @@ public class UniversityTestController {
 		return result;
 	}
 
-
+/*
 // --------------------- TEST FUNCTIONS ---------------------------------------	
 	
 	public void apiGroupTest() throws Exception {
@@ -560,7 +573,7 @@ public class UniversityTestController {
 		System.out.println();
 		System.out.println();
 	}
-	
+	*/
 	
 	
 	

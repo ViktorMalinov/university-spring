@@ -1,5 +1,8 @@
 package main;
 
+import main.business.apigroup.processor.ApiGroupProcessor;
+import main.business.apigroupuser.processor.ApiGroupUserProcessor;
+import main.business.apiuser.processor.ApiUserProcessor;
 import main.service.apigroup.ApiGroupResult;
 import main.service.apigroup.ApiGroupService;
 import main.service.apigroupuser.ApiGroupUserResult;
@@ -26,15 +29,15 @@ import java.util.stream.Stream;
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    private ApiUserService apiUser;
+    private ApiUserProcessor apiUser;
     @Autowired
-    private ApiGroupService apiGroupService;
+    private ApiGroupProcessor apiGroup;
     @Autowired
-    private ApiGroupUserService apiGroupUser;
+    private ApiGroupUserProcessor apiGroupUser;
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        List<ApiUserResult> users = apiUser.getAll();
+        List<ApiUserResult> users =  apiUser.getAll();
 
         users.stream().forEach(u ->
             {
@@ -42,7 +45,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                     auth
                             .inMemoryAuthentication()
                             .withUser(u.getUsername()).password(passwordEncoder().encode(u.getPassword())).roles(getRolesForUser(u.getId()));
-                            //.withUser(u.getUsername()).password(passwordEncoder().encode(u.getPassword())).roles("ADMIN");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -54,17 +56,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     private String getRolesForUser(Long id) throws Exception {
         String roles = "";
 
-        List<ApiGroupUserResult>  grpUser = apiGroupUser.getAll();
-        List<ApiGroupResult>  groups = apiGroupService.getAll();
+        List<ApiGroupUserResult>  grpUser =  apiGroupUser.getAll();
+        List<ApiGroupResult>  groups =  apiGroup.getAll();
 
         Stream<ApiGroupUserResult> fltUserGroups = grpUser.stream().filter(gu -> gu.getApiUserId().equals(id));
         List<ApiGroupUserResult> fltUserGroupsList = fltUserGroups.collect(Collectors.toList());
 
         Stream<ApiGroupResult> fltGroups = groups.stream().filter(
                 g -> fltUserGroupsList.stream().anyMatch(gu -> gu.getApiGroupId().equals(g.getId()))
-
-                //g -> checkGroup(fltUserGroupsList,g.getId())
-                //g -> g.getId() == 2 || g.getId() == 1
         );
 
         List<ApiGroupResult> fltGroupsList = fltGroups.collect(Collectors.toList());
