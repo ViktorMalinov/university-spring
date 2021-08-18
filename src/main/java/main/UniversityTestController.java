@@ -1,47 +1,31 @@
 package main;
 
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import main.business.apigroup.processor.ApiGroupProcessor;
 import main.business.apigroupuser.processor.ApiGroupUserProcessor;
 import main.business.apiuser.processor.ApiUserProcessor;
+import main.service.apigroup.ApiGroupResult;
+import main.service.apigroup.ApiGroupService;
+import main.service.apigroupuser.ApiGroupUserResult;
+import main.service.apigroupuser.ApiGroupUserService;
+import main.service.apiuser.ApiUserResult;
+import main.service.apiuser.ApiUserService;
+import main.service.department.DepartmentService;
+import main.service.discipline.DisciplineService;
+import main.service.faculty.FacultyService;
+import main.service.facultydiscipline.FacultyDisciplineService;
+import main.service.lecturer.LecturerService;
+import main.service.speciality.SpecialityService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
+
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import main.service.apigroup.ApiGroupParam;
-import main.service.apigroup.ApiGroupResult;
-import main.service.apigroup.ApiGroupService;
-import main.service.apigroupuser.ApiGroupUserParam;
-import main.service.apigroupuser.ApiGroupUserResult;
-import main.service.apigroupuser.ApiGroupUserService;
-import main.service.apiuser.ApiUserParam;
-import main.service.apiuser.ApiUserResult;
-import main.service.apiuser.ApiUserService;
-import main.service.department.DepartmentParam;
-import main.service.department.DepartmentResult;
-import main.service.department.DepartmentService;
-import main.service.discipline.DisciplineParam;
-import main.service.discipline.DisciplineResult;
-import main.service.discipline.DisciplineService;
-import main.service.faculty.FacultyParam;
-import main.service.faculty.FacultyResult;
-import main.service.faculty.FacultyService;
-import main.service.facultydiscipline.FacultyDisciplineParam;
-import main.service.facultydiscipline.FacultyDisciplineResult;
-import main.service.facultydiscipline.FacultyDisciplineService;
-import main.service.lecturer.LecturerParam;
-import main.service.lecturer.LecturerResult;
-import main.service.lecturer.LecturerService;
-import main.service.speciality.SpecialityParam;
-import main.service.speciality.SpecialityResult;
-import main.service.speciality.SpecialityService;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 @RestController

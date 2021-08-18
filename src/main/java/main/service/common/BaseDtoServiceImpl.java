@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import main.business.common.BaseProcessor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 
 public class BaseDtoServiceImpl<
 		IN  extends BaseDto,
@@ -29,7 +30,7 @@ public class BaseDtoServiceImpl<
 
 	//@GetMapping("/{id:[0-9][0-9]*}")
 	@Override
-	public ResponseEntity<OUT> get(PK id)  throws Exception {
+	public ResponseEntity<OUT> get(@PathVariable("id") final PK id)  throws Exception {
 		OUT result = processor.get(id);
 		return ResponseEntity.ok(result);
 	}
@@ -41,9 +42,9 @@ public class BaseDtoServiceImpl<
 		return ResponseEntity.noContent().build();
 	}
 
-	//  @DeleteMapping("erase/{id:[0-9][0-9]*}")
+	//  @DeleteMapping("delete/{id:[0-9][0-9]*}")
 	@Override
-	public ResponseEntity<Void> delete(PK id) {
+	public ResponseEntity<Void> delete(@PathVariable("id") final PK id) {
 		processor.delete(id);
 		return ResponseEntity.noContent().build();
 	}

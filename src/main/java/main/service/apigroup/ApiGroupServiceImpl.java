@@ -9,8 +9,9 @@ import main.service.common.BaseServiceImpl;
 
 import java.util.List;
 
-@RestController
+//@RequestMapping(value = "/apigroup", produces = "application/json")
 //@RequestMapping(value = "/apigroup", produces = "application/json", consumes = "application/json")
+@RestController
 @RequestMapping("/apigroup")
 public class ApiGroupServiceImpl 
 extends BaseServiceImpl<
@@ -21,20 +22,32 @@ extends BaseServiceImpl<
 		implements ApiGroupService {
 
 	@Override
-	@GetMapping("/{id:[0-9][0-9]*}")
+	@GetMapping(value = "/{id:[0-9][0-9]*}", produces = "application/json")
 	public ResponseEntity<ApiGroupResult> get(@PathVariable("id") Long id) throws Exception {
 		return super.get(id);
 	}
 
 	@Override
-	@PostMapping
+	@PostMapping(produces = "application/json", consumes = "application/json")
 	public ResponseEntity<ApiGroupResult> create(@RequestBody ApiGroupParam param) throws Exception {
 		return super.create(param);
 	}
 
 	@Override
-	@GetMapping
+	@GetMapping(produces = "application/json")
 	public ResponseEntity<List<ApiGroupResult>> getAll() throws Exception {
 		return super.getAll();
+	}
+
+	@Override
+	@DeleteMapping("/delete/{id:[0-9][0-9]*}")
+	public ResponseEntity<Void> delete(@PathVariable("id") Long id) {
+		return super.delete(id);
+	}
+
+	@Override
+	@PutMapping(produces = "application/json", consumes = "application/json")
+	public ResponseEntity<Void> update(@RequestBody ApiGroupParam param) throws Exception {
+		return super.update(param);
 	}
 }
