@@ -29,7 +29,7 @@ import java.util.stream.Stream;
 
 
 @RestController
-@RequestMapping("uni")
+@RequestMapping("/uni")
 public class UniversityTestController {
 
 	@Autowired
