@@ -1,18 +1,24 @@
 package main.dataaccess.discipline.repo;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import main.common.Utils;
 import main.dataaccess.common.PersistentRepoManagerImpl;
 import main.dataaccess.discipline.dao.Discipline;
 
+@Repository
 public class DisciplineRepoManagerImpl extends PersistentRepoManagerImpl<Discipline> implements DisciplineRepoManager {
 
-	private static Map<Long, Discipline> datasource = new HashMap<Long, Discipline>();
+	//private static Map<Long, Discipline> datasource = new HashMap<Long, Discipline>();
+	
+	@Autowired
+	private DisciplineCrudRepository datasource;
+	
 
 	@Override
-	public Map<Long, Discipline> getDataSource() {
+	public CrudRepository<Discipline, Long> getDataSource() {
 		return datasource;
 	}
 
@@ -29,7 +35,5 @@ public class DisciplineRepoManagerImpl extends PersistentRepoManagerImpl<Discipl
 		return Discipline.class;
 	}
 
-	public DisciplineRepoManagerImpl() {
-		load();
-	}
+
 }

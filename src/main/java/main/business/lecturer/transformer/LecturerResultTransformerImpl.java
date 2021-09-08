@@ -1,5 +1,7 @@
 package main.business.lecturer.transformer;
 
+import org.springframework.stereotype.Component;
+
 import main.business.common.BaseResultTransformerImpl;
 import main.common.Constants;
 import main.common.ErrCode;
@@ -7,15 +9,18 @@ import main.common.UniversityBaseException;
 import main.dataaccess.lecturer.dao.Lecturer;
 import main.service.lecturer.LecturerResult;
 
+@Component
 public class LecturerResultTransformerImpl 
 		extends BaseResultTransformerImpl<LecturerResult,Lecturer>
 		implements LecturerResultTransformer {
 
+	@Override
 	public LecturerResult getNewResult() {
 		LecturerResult result = new LecturerResult();
 		return result;
 	}
 	
+	@Override
 	protected void setProperties(Lecturer entity, LecturerResult result) throws Exception {
 		result.setFamilyName(entity.getFamilyName());
 		

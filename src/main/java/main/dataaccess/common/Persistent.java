@@ -9,46 +9,47 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
-import javax.persistence.Version;
 
+import lombok.*;
 import org.hibernate.annotations.OptimisticLockType;
 import org.hibernate.annotations.OptimisticLocking;
 
-import com.sun.istack.NotNull;
 
 
+@Data
 @Access(AccessType.FIELD)
 @MappedSuperclass
 @OptimisticLocking(type = OptimisticLockType.VERSION)
 public class Persistent {
 
+	//private static final long serialVersionUID = 6857410091575760475L;
+	
+	
 	@Id()
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
 	protected Long id;
 
-	
+	@Column(name = "modification_time", columnDefinition = "TIMESTAMP")
+	protected LocalDateTime modificationTime;
+
+
+	/*
 	@Version
 	@NotNull
 	@Column(name = "version", columnDefinition = "BIGINT(20) NOT NULL DEFAULT 0")
-	protected Long version;
+	protected Long version = 1L; // = 1L;
+	*/
 	
-	
-	@Column(name = "modification_time", columnDefinition = "TIMESTAMP")
-	protected LocalDateTime modificationTime;	
-	
-	  
-	  
-	public Long getId() {
-		return this.id;
+
+	/*  
+	public Long getVersion() {
+		return version;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setVersion(Long version) {
+		this.version = version;
 	}
-	
-	public Persistent() {
-		
-	};
-	
+	*/
+
 }

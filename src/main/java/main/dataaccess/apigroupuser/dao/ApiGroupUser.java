@@ -5,11 +5,14 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import lombok.*;
 import main.dataaccess.apigroup.dao.ApiGroup;
 import main.dataaccess.apiuser.dao.ApiUser;
 import main.dataaccess.common.Persistent;
 
 
+@Data
+@EqualsAndHashCode(callSuper=false)
 @Entity
 @Table(name = "api_group_user")
 public class ApiGroupUser extends Persistent {
@@ -22,31 +25,5 @@ public class ApiGroupUser extends Persistent {
 	@JoinColumn(name = "api_user_id", nullable = false)	
 	private ApiUser apiUser;
 
-
-	
-	
-	public ApiGroup getApiGroup() {
-		return apiGroup;
-	}
-
-
-	public void setApiGroup(ApiGroup apiGroup) {
-		this.apiGroup = apiGroup;
-	}
-
-
-	public ApiUser getApiUser() {
-		return apiUser;
-	}
-
-
-	public void setApiUser(ApiUser apiUser) {
-		this.apiUser = apiUser;
-	}
-
-
-
-	
-	
 
 }

@@ -5,10 +5,13 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import lombok.*;
 import main.dataaccess.common.NamePersistent;
 import main.dataaccess.faculty.dao.Faculty;
 
 
+@Data
+@EqualsAndHashCode(callSuper=false)
 @Entity
 @Table(name = "department")
 public class Department extends NamePersistent {
@@ -18,18 +21,4 @@ public class Department extends NamePersistent {
 	private Faculty faculty;
 
 
-
-	public Faculty getFaculty() {
-		return faculty;
-	}
-
-
-	public void setFaculty(Faculty faculty) {
-		this.faculty = faculty;
-	}
-
-
-
-	
-	
 }

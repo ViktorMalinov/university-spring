@@ -1,5 +1,7 @@
 package main.business.facultydiscipline.transformer;
 
+import org.springframework.stereotype.Component;
+
 import main.business.common.BaseDtoResultTransformerImpl;
 import main.common.Constants;
 import main.common.ErrCode;
@@ -7,15 +9,18 @@ import main.common.UniversityBaseException;
 import main.dataaccess.facultydiscipline.dao.FacultyDiscipline;
 import main.service.facultydiscipline.FacultyDisciplineResult;
 
+@Component
 public class FacultyDisciplineResultTransformerImpl 
 		extends BaseDtoResultTransformerImpl<FacultyDisciplineResult,FacultyDiscipline> 
 		implements FacultyDisciplineResultTransformer {
 
+	@Override
 	public FacultyDisciplineResult getNewResult() {
 		FacultyDisciplineResult result = new FacultyDisciplineResult();
 		return result;
 	}
 	
+	@Override
 	protected void setProperties(FacultyDiscipline entity, FacultyDisciplineResult result) throws Exception {
 
 		if (entity.getDiscipline() == null) {

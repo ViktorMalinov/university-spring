@@ -1,18 +1,24 @@
 package main.dataaccess.lecturer.repo;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import main.common.Utils;
 import main.dataaccess.common.PersistentRepoManagerImpl;
 import main.dataaccess.lecturer.dao.Lecturer;
 
+@Repository
 public class LecturerRepoManagerImpl extends PersistentRepoManagerImpl<Lecturer> implements LecturerRepoManager {
 
-	private static Map<Long, Lecturer> datasource = new HashMap<Long, Lecturer>();
+	//private static Map<Long, Lecturer> datasource = new HashMap<Long, Lecturer>();
+	
+	@Autowired
+	private LecturerCrudRepository datasource;
+	
 
 	@Override
-	public Map<Long, Lecturer> getDataSource() {
+	public CrudRepository<Lecturer, Long> getDataSource() {
 		return datasource;
 	}
 
@@ -28,7 +34,5 @@ public class LecturerRepoManagerImpl extends PersistentRepoManagerImpl<Lecturer>
 		return Lecturer.class;
 	}
 
-	public LecturerRepoManagerImpl() {
-		load();
-	}
+
 }

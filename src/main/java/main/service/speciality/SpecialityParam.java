@@ -1,16 +1,12 @@
 package main.service.speciality;
 
+import lombok.*;
 import main.service.common.NameDto;
 
+@Data
+@EqualsAndHashCode(callSuper=false)
 public class SpecialityParam extends NameDto {
 
 	private Long facultyId;
-	
-	public Long getFacultyId() {
-		return facultyId;
-	}
-	public void setFacultyId(Long facultyId) {
-		this.facultyId = facultyId;
-	}
-	
+
 }

@@ -1,29 +1,33 @@
 package main.business.department.processor;
 
+import org.springframework.stereotype.Component;
+
 import main.business.common.BaseProcessorImpl;
 import main.business.department.transformer.DepartmentParamTransformerImpl;
 import main.business.department.transformer.DepartmentResultTransformerImpl;
 import main.dataaccess.department.dao.Department;
-import main.dataaccess.department.dao.DepartmentDaoHMapImpl;
+import main.dataaccess.department.dao.DepartmentDaoImpl;
 import main.service.department.DepartmentParam;
 import main.service.department.DepartmentResult;
 
+@Component
 public class DepartmentProcessorImpl
 		extends BaseProcessorImpl<
 		DepartmentParam,
 		DepartmentResult,
 		Department,
-		DepartmentDaoHMapImpl,
+		DepartmentDaoImpl,
 		DepartmentParamTransformerImpl,
 		DepartmentResultTransformerImpl,
 		Long >
 		implements DepartmentProcessor {
 
 
+	/*
 	public DepartmentProcessorImpl() {
-		this.dao = new DepartmentDaoHMapImpl();
+		this.dao = new DepartmentDaoImpl();
 		this.paramTransformer = new DepartmentParamTransformerImpl();
 		this.resultTransformer = new DepartmentResultTransformerImpl();
 	}
-
+	*/
 }

@@ -41,12 +41,12 @@ public class University {
 		*/
         System.out.println("------------------------------------------------------");
 		
-		apiGroupTest();
-		ApiUserTest();
-		apiGroupUserTest();
+		//apiGroupTest();
+		//ApiUserTest();
+		//apiGroupUserTest();
 		
-		FacultyTest();
-		DepartmentTest();
+		//FacultyTest();
+		//DepartmentTest();
 
 		 // DisciplineTest();
 		// FacultyTest();
@@ -66,7 +66,7 @@ public class University {
 	}
 	*/
 	
-	
+	/*
 	public static void apiGroupTest() throws Exception {
 		ApiGroupService apiGroup = new ApiGroupServiceImpl(); 
 		ApiGroupParam param = new ApiGroupParam();
@@ -294,7 +294,7 @@ public class University {
 		System.out.println();
 	}
 
-	
+	*/
 	
 	/*
 	

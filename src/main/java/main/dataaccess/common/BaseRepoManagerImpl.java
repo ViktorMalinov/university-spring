@@ -1,78 +1,86 @@
 package main.dataaccess.common;
 
-import java.io.File;
-import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.repository.CrudRepository;
 
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
 
 public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK, ENT> {
 
 	
 	protected abstract PK getPk(ENT entity);
-	protected abstract void setPk(ENT entity);
-	protected abstract Map<PK, ENT> getDataSource();
-	protected abstract String getPath();
 	protected abstract Class<?> getClazz(); 
 	protected static Logger logger = LoggerFactory.getLogger(BaseRepoManagerImpl.class);
+
+	protected abstract CrudRepository<ENT, PK> getDataSource();
+	
+	
+	
 	
 	@Override
 	public ENT insert(ENT entity) {
-		setPk(entity);
-		getDataSource().put(getPk(entity), entity);
 		
-		persist();
+		ENT result;
+		
+		result = getDataSource().save(entity);
 		
 		logger.info("ISERTING  ---> " + entity.toString());
+
+		return result;
 		
-		return entity;
 	}
 
 	@Override
 	public ENT select(PK id) {
-		ENT entity = getDataSource().get(id);
+		ENT entity = null;
+		
+		entity = getDataSource().findById(id).orElse(entity);
 
 		logger.info("SELECTING ---> ID: " + id.toString() + ", object: " + entity.toString());
-		
-		return entity;	
+
+		return entity;
 	}
 
 	@Override
 	public void update(ENT entity) {
-		getDataSource().put(getPk(entity), entity);
+		Optional<ENT> entityToUpdate = getDataSource().findById(getPk(entity));  
 		
-		logger.info("UPDATING  ---> ID: " + getPk(entity).toString() + ", object: " + entity.toString());
+		logger.info("UPDATING  --->  object: " + entity.toString() + "  AND THE ID IS: ---> "+ getPk(entity));
 		
-		persist();
+		//getDataSource().save(entity);
+		
+		entityToUpdate.ifPresent(ent -> getDataSource().save(entity) );
+		
+		logger.info("UPDATING  --->  object: " + entity.toString() + "  AND THE ID IS: ---> "+ getPk(entity));
+		
 	}
 
 	@Override
 	public void delete(PK id) {
-		getDataSource().remove(id);
+		getDataSource().deleteById(id);
 		
 		logger.info("DELETING  ---> ID: " + id.toString() );
-		
-		persist();
 	}
 
 	@Override
 	public List<ENT> selectAll() {
-		List<ENT> allData = (List<ENT>) getDataSource().values();
-		return allData;
+		List<ENT> result = new ArrayList<ENT>();
+		
+		Iterable<ENT> entity = getDataSource().findAll();
+		
+		entity.forEach(result::add);
+		
+		return result;
 	}
 	
 	
 	//---------------------------------------------------------------
 	
-	
+	/*
 	public void load() {
 		ObjectMapper mapper = new ObjectMapper();
 		File dataFile = new File(getPath());
@@ -113,5 +121,6 @@ public abstract class BaseRepoManagerImpl<PK, ENT> implements BaseRepoManager<PK
             e.printStackTrace();
         }
     }
+    */
 
 }
