@@ -4,4 +4,5 @@ import main.dataaccess.common.BaseDao;
 
 public interface ApiUserDao extends BaseDao <Long, ApiUser> {
 
+    ApiUser getUser (String username);
 }
