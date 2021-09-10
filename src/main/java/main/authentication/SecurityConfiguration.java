@@ -1,4 +1,4 @@
-package main.authentication;
+/* package main.authentication;
 
 import main.business.apigroup.processor.ApiGroupProcessor;
 import main.business.apigroupuser.processor.ApiGroupUserProcessor;
@@ -98,3 +98,4 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 
 }
+*/

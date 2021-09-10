@@ -1,5 +1,6 @@
 package main.authentication;
 
+import lombok.SneakyThrows;
 import main.business.apiuser.processor.ApiUserProcessor;
 import main.dataaccess.apisession.dao.ApiSession;
 import main.dataaccess.apisession.dao.ApiSessionDao;
@@ -22,6 +23,7 @@ public class TokenAuthenticationProvider implements AuthenticationProvider {
     @Autowired
     private ApiUserProcessor userProcessor;
 
+    @SneakyThrows
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         UsernamePasswordTokenAuthenticationToken authenticationToken = (UsernamePasswordTokenAuthenticationToken) authentication ;

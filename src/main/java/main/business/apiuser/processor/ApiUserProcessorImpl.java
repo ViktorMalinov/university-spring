@@ -1,5 +1,8 @@
 package main.business.apiuser.processor;
 
+import main.business.apiuser.transformer.ApiUserResultTransformer;
+import main.dataaccess.apiuser.dao.ApiUserDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import main.business.apiuser.transformer.ApiUserParamTransformerImpl;
@@ -21,12 +24,16 @@ public class ApiUserProcessorImpl
 		ApiUserResultTransformerImpl,
 		Long >
 		implements ApiUserProcessor {
-	
-	/*
-	public ApiUserProcessorImpl() {
-		this.dao = new ApiUserDaoImpl();
-		this.paramTransformer = new ApiUserParamTransformerImpl();
-		this.resultTransformer = new ApiUserResultTransformerImpl();
+
+	@Autowired
+	private ApiUserDao apiUserDao;
+
+	@Autowired
+	private ApiUserResultTransformer apiUserResultTransformer;
+
+
+	@Override
+	public ApiUserResult getUser(String username) throws Exception {
+		return apiUserResultTransformer.transform(apiUserDao.getUser(username));
 	}
-	*/
 }
