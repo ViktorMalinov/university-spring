@@ -20,6 +20,7 @@ import main.service.faculty.FacultyParam;
 import main.service.faculty.FacultyResult;
 import main.service.faculty.FacultyService;
 import main.service.faculty.FacultyServiceImpl;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 public class University {
 
@@ -56,6 +57,32 @@ public class University {
 		
 		
 		System.out.println("");
+
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		String password = "admin111";
+		String encodedPassword = passwordEncoder.encode(password);
+
+		System.out.println();
+		System.out.println("Password is         : " + password);
+		System.out.println("Encoded Password is : " + encodedPassword);
+		System.out.println();
+
+		boolean isPasswordMatch = passwordEncoder.matches(password, encodedPassword);
+		System.out.println("Password : " + password + "   isPasswordMatch    : " + isPasswordMatch);
+
+		password = "user111";
+		encodedPassword = passwordEncoder.encode(password);
+
+		System.out.println();
+		System.out.println("Password is         : " + password);
+		System.out.println("Encoded Password is : " + encodedPassword);
+		System.out.println();
+
+		isPasswordMatch = passwordEncoder.matches(password, encodedPassword);
+		System.out.println("Password : " + password + "   isPasswordMatch    : " + isPasswordMatch);
+
+
+
 	}
 	
 

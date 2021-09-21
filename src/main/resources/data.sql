@@ -1,5 +1,5 @@
-INSERT INTO api_user (code, description, name, display_name, email, password, username) VALUES( 10, 'First group ever... :)', 'Atanas', 'Admin user', 'admin@xaos.com', 'admin111', 'admin');
-INSERT INTO api_user (code, description, name, display_name, email, password, username) VALUES( 21, 'Secong group ever... :)', 'Ivan', 'Simple user - modified', 'user@xaos.com', 'user111', 'user');
+INSERT INTO api_user (code, description, name, display_name, email, password, username) VALUES( 10, 'First group ever... :)', 'Atanas', 'Admin user', 'admin@xaos.com', '$2a$10$OsSAnz0XoHE9.7x7tWOnIOp0XcGlY8RH3n8aX/b33NHvcDdcfGlk.', 'admin');
+INSERT INTO api_user (code, description, name, display_name, email, password, username) VALUES( 21, 'Secong group ever... :)', 'Ivan', 'Simple user - modified', 'user@xaos.com', '$2a$10$hmWDJoogjwaRvNojlkW8sOITEYqYSe2hPCyWPiLcAffG/KYAuLxJa', 'user');
 
 INSERT INTO api_group (code, description, name, display_name) VALUES(10, 'First group ever... :)', 'ADMIN', 'Display Name AG');
 INSERT INTO api_group (code, description, name, display_name) VALUES(21, 'Secong group ever... :) - a', 'USERS', 'Display Name AG - 2a');
