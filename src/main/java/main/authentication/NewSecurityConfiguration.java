@@ -71,12 +71,19 @@ public class NewSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 //.and()
                 //.addFilterAfter(new LoginPageFilter(), UsernamePasswordAuthenticationFilter.class)
                 //.authorizeRequests().antMatchers("/loginUser").permitAll()
+                .and()
+                .antMatcher("/**")
+                .authorizeRequests()
+                .antMatchers("/", "/login**","/callback/", "/webjars/**", "/error**")
+                .permitAll()
+                //.anyRequest()
+                //.authenticated();
 
                 .and()
                 .authenticationProvider(basicAuthenticationProvider)
                 .addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class)
                 .authorizeRequests()
-                .antMatchers("/login*", "/logout*").permitAll()
+                //.antMatchers("/login*", "/logout*").permitAll()
                 .anyRequest()
                 .authenticated()
 
@@ -91,7 +98,9 @@ public class NewSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .logout()
                 .logoutUrl("/perform_logout")
                 .deleteCookies("JSESSIONID")
-                .logoutSuccessHandler(logoutSuccessHandler());        ;
+                .logoutSuccessHandler(logoutSuccessHandler())
+
+        ;
     }
 
     @Override
