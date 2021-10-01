@@ -99,7 +99,8 @@ public class NewSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
-
+                .defaultSuccessUrl("http://www.google.com", true)
+                .failureUrl("http://www.yahoo.com")
         ;
     }
 
