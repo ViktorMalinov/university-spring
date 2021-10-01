@@ -110,8 +110,8 @@ public class NewSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 "/resources/static/**", "/css/**", "/js/**", "/img/**", "/fonts/**",
                 "/images/**", "/scss/**", "/vendor/**", "/favicon.ico", "/auth/**", "/favicon.png",
                 "/v2/api-docs", "/configuration/ui", "/configuration/security", "/swagger-ui.html",
-                "/webjars/**", "/swagger-resources/**", "/swagge‌​r-ui.html", "/actuator", "/error", "/accessDenied",
-                "/actuator/**", "/swagger-ui/**", "/swagger-ui/#/", "/apiuser", "/apigroup", "/lecturer", "/login**", "/login.html" );
+                "/webjars/**", "/swagger-resources/**", "/swagge‌​r-ui.html", "/actuator", "/accessDenied",
+                "/actuator/**", "/swagger-ui/**", "/swagger-ui/#/", "/apiuser", "/apigroup", "/lecturer", "/login.html" );
     }
 
     @Bean
