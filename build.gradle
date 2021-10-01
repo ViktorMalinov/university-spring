@@ -32,22 +32,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
 
-	// https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
-	//implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
-
-	// https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
-	//implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
-
 	// https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter
 	implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
-
-
-
-	//compileOnly 'org.projectlombok:lombok'
-	//developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	//runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
-	//annotationProcessor 'org.projectlombok:lombok'
-	//testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
@@ -62,6 +48,12 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
 	implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.31'
+
+	// https://mvnrepository.com/artifact/org.springframework/spring-webflux
+	// implementation group: 'org.springframework', name: 'spring-webflux', version: '5.3.9'
+
+
+
 
 }
 

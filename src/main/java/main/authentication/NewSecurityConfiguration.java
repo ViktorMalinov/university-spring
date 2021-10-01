@@ -25,7 +25,7 @@ import java.util.Collections;
 
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+//@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class NewSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -49,20 +49,7 @@ public class NewSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        /*
-        PortMapperImpl portMapper = new PortMapperImpl();
-        portMapper.setPortMappings(Collections.singletonMap("8080","8443"));
-        PortResolverImpl portResolver = new PortResolverImpl();
-        portResolver.setPortMapper(portMapper);
-        LoginUrlAuthenticationEntryPoint entryPoint = new LoginUrlAuthenticationEntryPoint(
-                "/login");
-        entryPoint.setPortMapper(portMapper);
-        entryPoint.setPortResolver(portResolver);
-
-        HttpSessionRequestCache cache = new HttpSessionRequestCache();
-        cache.setPortResolver(portResolver);
-        http.setSharedObject(RequestCache.class, cache);
-        */
+/*
 
         http.csrf().disable()
                 .sessionManagement()
@@ -99,6 +86,19 @@ public class NewSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .logoutUrl("/perform_logout")
                 .deleteCookies("JSESSIONID")
                 .logoutSuccessHandler(logoutSuccessHandler())
+*/
+
+        http
+                .csrf().disable()
+                .cors().disable()
+                .sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
+                .addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class)
+                .authorizeRequests()
+                .anyRequest().authenticated()
+                .and()
+                .formLogin()
 
         ;
     }
@@ -110,8 +110,8 @@ public class NewSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 "/resources/static/**", "/css/**", "/js/**", "/img/**", "/fonts/**",
                 "/images/**", "/scss/**", "/vendor/**", "/favicon.ico", "/auth/**", "/favicon.png",
                 "/v2/api-docs", "/configuration/ui", "/configuration/security", "/swagger-ui.html",
-                "/webjars/**", "/swagger-resources/**", "/swagge‌​r-ui.html", "/actuator",
-                "/actuator/**", "/swagger-ui/**", "/swagger-ui/#/", "/apiuser", "/apigroup", "/lecturer", "/login**" );
+                "/webjars/**", "/swagger-resources/**", "/swagge‌​r-ui.html", "/actuator", "/error", "/accessDenied",
+                "/actuator/**", "/swagger-ui/**", "/swagger-ui/#/", "/apiuser", "/apigroup", "/lecturer", "/login**", "/login.html" );
     }
 
     @Bean
