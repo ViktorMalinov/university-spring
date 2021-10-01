@@ -7,6 +7,7 @@ import main.dataaccess.apisession.dao.ApiSessionDao;
 import main.service.apiuser.ApiUserResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Component;
@@ -26,7 +27,7 @@ public class TokenAuthenticationProvider implements AuthenticationProvider {
     @SneakyThrows
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
-        UsernamePasswordTokenAuthenticationToken authenticationToken = (UsernamePasswordTokenAuthenticationToken) authentication ;
+        UsernamePasswordTokenAuthenticationToken authenticationToken = (UsernamePasswordTokenAuthenticationToken) authentication;
 
         if (authenticationToken != null) {
 

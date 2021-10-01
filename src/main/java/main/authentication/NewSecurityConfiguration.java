@@ -40,7 +40,7 @@ public class NewSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.authenticationProvider(tokenAuthenticationProvider);
+        //auth.authenticationProvider(tokenAuthenticationProvider);
         auth.authenticationProvider(basicAuthenticationProvider);
 
 
